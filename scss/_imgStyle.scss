@@ -1,0 +1,64 @@
+html body  .main_bg {
+    background: url("../img/mian_bg.png") no-repeat center center;
+    background-size: cover;
+}
+
+html body main .gridArea ul li .gameSelect i {
+    background: url("../img/grid_public.png") no-repeat center;
+    background-size: contain;
+}
+
+// sport
+html body main .gridArea ul li .gameSelect.sport {
+    background: url("../img/grid_sport_box.png") no-repeat center;
+    background-size: contain;
+}
+
+// live
+html body main .gridArea ul li .gameSelect.live {
+    background: url("../img/grid_live_box.png") no-repeat center;
+    background-size: contain;
+}
+
+// slot
+html body main .gridArea ul li .gameSelect.slot {
+    background: url("../img/grid_slot_box.png") no-repeat center;
+    background-size: contain;
+}
+
+// lottery
+html body main .gridArea ul li .gameSelect.lottery {
+    background: url("../img/grid_lottery_box.png") no-repeat center;
+    background-size: contain;
+}
+
+// board
+html body main .gridArea ul li .gameSelect.board {
+    background: url("../img/grid_board_box.png") no-repeat center;
+    background-size: contain;
+}
+// fish
+html body main .gridArea ul li .gameSelect.fish {
+    background: url("../img/grid_fish_box.png") no-repeat center;
+    background-size: contain;
+}
+
+// footer
+html body footer .upperHalf {
+    background: url("../img/footer_bg.png") no-repeat top left;
+    background-size: cover;
+}
+
+html body footer .lowerHalf {
+    background: url("../img/footer_bg_2.png") no-repeat top left;
+    background-size: cover;
+}
+// aside
+html body aside.download div i {
+    background: url("../img/aside_download.png") no-repeat center;
+    background-size: contain;
+}
+html body aside.service div i {
+    background: url("../img/aside_servie.png") no-repeat center;
+    background-size: contain;
+}

@@ -1,0 +1,98 @@
+// main
+$main_1 : #ffffff;
+$main_2 : #000000;
+
+// second
+$second_1 : linear-gradient(to top, #8b714c 5%, #3c2d1b 80%);
+$second_2 : #f3ce92;
+$second_3 : linear-gradient(to top, #000000 0%, #1e1c18 50%, #000000 100%);
+// third
+$third_1 : #fff6e8;
+$third_2 : #ffe8c5;
+$third_3 : #da0101;
+// linear
+$linear_1 :linear-gradient(to right, #dab959 0%, #fff1b8 50%, #dab959 100%);
+$hover_1 :linear-gradient(to right, #fff1b8 0%, #dab959 50%, #fff1b8 100%);
+
+$linear_2 :linear-gradient(to top, #007d0c 0%, #05a845 50%, #007d0c 100%);
+$linear_3 :linear-gradient(to top, #001c77 0%, #0052af 50%, #001c77 100%);
+
+// border
+$border_1 : #ffffff;
+// shadow
+$shadow_1 :#00000096;
+
+@mixin topArea_1 {
+    background: linear-gradient(to bottom, #000000 0%, #1e1c18 40%, #1e1c18 60%, #000000 100%);
+
+}
+
+@mixin underTop_1 {
+    background: linear-gradient(to top, #856a49 0%, #f3ce92 50%, #ffedd0 100%);
+    box-shadow: 0px 0px 12px 0px $shadow_1 inset;
+}
+
+@mixin input_1 {
+    border: solid 1px $border_1;
+    border-radius: 30px;
+    background: $third_1 ;
+    box-shadow: 0px 1px 6px 0px $shadow_1 inset;
+
+}
+
+@mixin signin_1 {
+    border: solid 1px $border_1;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #f3db99 16%, #ffedd6 41%, #fff7e8 54% #ffedd6 68%, #a08b57 97%);
+    box-shadow: 0px 0px 4px 1px $main_2 inset;
+}
+
+@mixin signup_1 {
+    border: solid 1px #ff290c;
+    border-radius: 30px;
+    background: linear-gradient(to top, #a50808 14%, #ff290c 39%, #ff6d2d 60% #bd1009 87%);
+    box-shadow: 0px 0px 0px 2px $main_2 inset;
+}
+
+@mixin forget_1 {
+    background: linear-gradient(to bottom, #241709 0%, #a87f45 15%, #bb9256 85%, #241709 100%);
+}
+
+@mixin checkbox_1 {
+    background: $main_1;
+    border: solid 1px $main_2;
+    border-radius: 3px;
+    padding: 0;
+    box-shadow: 0 0 0 0;
+}
+
+@mixin marquee_1 {
+    background: linear-gradient(to bottom, #2b1b00 10%, #493621 50%, #553f26 100%);
+    border: solid 5px #dac7aa;
+    border-radius: 30px;
+    box-shadow: 0 0 9px 0px #fffbf3;
+}
+
+@mixin title_1 {
+    background: #fff6e8;
+    box-shadow: 0px 0px 6px 0px $shadow_1 inset;
+    border: solid 2px #ffffff;
+    border-radius: 30px;
+}
+
+@mixin li_1 {
+    background: linear-gradient(to top, #856a49 0%, #f3ce92 50%, #ffedd0 100%);
+    border-style: solid;
+    border-width: 3px 3px 3px 0;
+    border-color: #f3ba64;
+    border-radius: 0 50px 50px 0;
+}
+
+@mixin before_1 {
+    background: linear-gradient(to top, #856a49 0%, #f3ce92 50%, #ffedd0 100%);
+    border-radius: 50px 0 0 50px;
+    border-style: solid;
+    border-width: 3px 0px 3px 3px;
+    border-color: #f3ba64;
+
+}

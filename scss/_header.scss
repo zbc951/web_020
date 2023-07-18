@@ -1,0 +1,463 @@
+header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    .topArea {
+        width: 100%;
+        height: 45px;
+        @include topArea_1;
+        position: relative;
+        z-index: 9;
+
+        .centerArea {
+            width: 1400px;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            margin: 0 auto;
+
+            .userList {
+                width: auto;
+                height: 100%;
+                display: flex;
+
+                li {
+                    width: auto;
+                    height: 100%;
+
+                    form {
+                        width: auto;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+
+                        label {
+                            width: auto;
+                            height: auto;
+                            margin: 0 10px 0 0;
+
+                            input {
+                                width: 180px;
+                                height: 33px;
+                                @include input_1;
+                                padding: 0 18px;
+
+                                &::placeholder {
+                                    font-size: 15px;
+                                    font-weight: bold;
+                                    text-align: start;
+                                }
+                            }
+
+                            &.rememberAcc {
+                                display: flex;
+                                align-items: center;
+                                transform: translateY(2px);
+
+                                input {
+                                    width: 14px;
+                                    height: 14px;
+                                    @include checkbox_1;
+                                    position: relative;
+
+                                    &::before {
+                                        content: "";
+                                        width: 12px;
+                                        height: 4px;
+                                        border-style: solid;
+                                        border-width: 3px 3px 0 0;
+                                        border-color: $third_3;
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 0px;
+                                        transform: rotate(130deg);
+                                        opacity: 0;
+                                    }
+
+                                    &:checked {
+                                        &::before {
+                                            opacity: 1;
+                                        }
+                                    }
+                                }
+
+                                p {
+                                    color: $main_1;
+                                    font-size: 15px;
+                                    font-weight: bold;
+                                    margin: 0 0 0 2px;
+                                }
+                            }
+                        }
+
+                        button {
+                            width: 105px;
+                            height: 35px;
+                            margin: 0 10px 0 0;
+
+                            p {
+                                font-weight: bold;
+                                font-size: 16px
+                            }
+
+                            &.signinBtn {
+                                @include signin_1;
+
+                                p {
+                                    color: $main_2;
+                                }
+                            }
+
+                            &.signupBtn {
+                                @include signup_1;
+
+                                p {
+                                    color: $main_1;
+                                }
+                            }
+                        }
+                    }
+
+
+
+                    &.forgetBtn {
+                        margin: 0 5px 0 0;
+
+                        button {
+                            width: auto;
+                            height: 100%;
+                            @include forget_1;
+                            padding: 0 20px;
+
+                            p {
+                                color: $main_2;
+                                font-size: 14px;
+                                font-weight: bold;
+                                letter-spacing: 1px;
+                            }
+
+                        }
+                    }
+
+                    &.languageBtn {
+                        label {
+                            width: auto;
+                            height: 100%;
+                            position: relative;
+
+                            &::before {
+                                content: "";
+                                border-style: solid;
+                                border-width: 6px 4px 0 4px;
+                                border-color: $main_2 transparent;
+                                position: absolute;
+                                top: 55%;
+                                right: 10px;
+                                transform: translateY(-50%);
+                                pointer-events: none;
+                            }
+
+                            select {
+                                width: auto;
+                                height: 100%;
+                                @include forget_1;
+                                font-size: 14px;
+                                font-weight: bold;
+                                border: none;
+                                letter-spacing: 1px;
+                                padding: 0 15px 0 15px;
+                                cursor: pointer;
+
+                                option {
+                                    background: $main_2;
+                                    color: $main_1;
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover,
+                    &:active,
+                    &.active {
+                        &.forgetBtn {
+                            button {
+                                background: $second_1;
+
+                                p {
+                                    color: $third_2;
+                                }
+                            }
+                        }
+
+                        &.languageBtn {
+                            label {
+                                &::before {
+                                    border-color: $third_2 transparent;
+                                }
+
+                                select {
+                                    background: $second_1;
+                                    color: $third_2 ;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .underTopArea {
+        width: 100%;
+        height: 75px;
+        @include underTop_1;
+
+
+        .centerArea {
+            width: 1400px;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            // padding: 0 30px 0 0;
+
+            .logo {
+                width: auto;
+                height: auto;
+                flex-shrink: 0;
+
+                img {
+                    width: 153px;
+                    height: 60px;
+                    object-fit: contain;
+                }
+            }
+
+            .menuArea {
+                width: auto;
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+                li {
+                    width: auto;
+                    height: 100%;
+                    @include li_1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    z-index: 7;
+                    cursor: pointer;
+
+                    a {
+                        width: auto;
+                        height: auto;
+                        padding: 0 20px;
+
+                        p {
+                            color: $main_2;
+                            font-size: 20px;
+                            font-weight: bold;
+                            letter-spacing: 2px;
+                            position: relative;
+                            z-index: 5;
+                        }
+                    }
+
+                    &::before {
+                        content: "";
+                        width: 40px;
+                        height: 100%;
+                        @include before_1;
+                        position: absolute;
+                        top: 50%;
+                        left: -40px;
+                        transform: translateY(-51%);
+                        cursor: pointer;
+                    }
+
+                    &:nth-of-type(9) {
+                        z-index: 1;
+                    }
+
+                    &:nth-of-type(8) {
+                        z-index: 2;
+                        transform: translateX(10px);
+                    }
+
+                    &:nth-of-type(7) {
+                        z-index: 3;
+                        transform: translateX(20px);
+                    }
+
+                    &:nth-of-type(6) {
+                        z-index: 4;
+                        transform: translateX(30px);
+                    }
+
+                    &:nth-of-type(5) {
+                        z-index: 5;
+                        transform: translateX(40px);
+                    }
+
+                    &:nth-of-type(4) {
+                        z-index: 6;
+                        transform: translateX(50px);
+                    }
+
+                    &:nth-of-type(3) {
+                        z-index: 7;
+                        transform: translateX(60px);
+                    }
+
+                    &:nth-of-type(2) {
+                        z-index: 8;
+                        transform: translateX(70px);
+                    }
+
+                    &:nth-of-type(1) {
+                        width: 120px;
+                        z-index: 9;
+                        transform: translateX(80px);
+                        border-radius: 50px;
+                        border-width: 3px;
+
+                        &::before {
+                            content: unset;
+                        }
+                    }
+
+                    &:hover,
+                    &:active,
+                    &.active {
+                        background: $second_3;
+
+
+                        p {
+                            color: $second_2;
+                        }
+
+                        &::before {
+                            background: $second_3;
+                        }
+                    }
+                }
+
+            }
+        }
+
+
+    }
+
+    .bottomArea {
+        width: 100%;
+        height: 226px;
+        background: $second_3 ;
+        display: none;
+
+        &.display {
+            display: block;
+        }
+
+        .listArea {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            ul {
+                width: 1320px;
+                height: 100%;
+                overflow: hidden;
+                display: none;
+
+                &.display {
+                    display: block;
+                }
+
+                ol {
+                    width: auto;
+                    height: 100%;
+                    display: flex;
+
+                    li {
+                        width: 220px;
+                        height: 100%;
+                        display: flex;
+
+                        a {
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+
+                            div {
+                                width: 220px;
+                                height: 184px;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: contain;
+                                }
+                            }
+
+                            p {
+                                font-size: 14px;
+                                font-weight: bold;
+                                text-align: center;
+                                color: $main_1;
+                                margin-top: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .arrow_ic {
+                width: 40px;
+                height: 100%;
+                position: relative;
+                cursor: pointer;
+                pointer-events: none;
+
+                &.active {
+                    pointer-events: visible;
+
+                    &::before {
+                        opacity: 1;
+                    }
+                }
+
+                &::before {
+                    content: "";
+                    width: 15px;
+                    height: 15px;
+                    border-style: solid;
+                    border-width: 4px 4px 0 0;
+                    border-color: $border_1;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) rotate(-135deg);
+                    opacity: 0.3;
+                }
+
+                &.next {
+                    transform: scaleX(-1);
+                }
+            }
+        }
+
+
+    }
+}
