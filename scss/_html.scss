@@ -24,9 +24,48 @@ html {
             z-index: -99;
         }
 
+        .input {
+            &.primary {
+                border: solid 1px #fff;
+                border-radius: 30px;
+                background: #fff6e8;
+                box-shadow: 0px 1px 6px 0px #00000096 inset;
+            }
+        }
 
+        .btn {
+            width: auto;
+            height: auto;
 
+            &.primary {
+                background: linear-gradient(to bottom, #f3db99 16%, #ffedd6 41%, #fff7e8 54% #ffedd6 68%, #a08b57 97%);
+                border: solid 1px #fff;
+                border-radius: 30px;
+                box-shadow: 0px 0px 4px 1px #000 inset;
+                color: #000;
+            }
 
+            &.second {
+                background: linear-gradient(to top, #a50808 14%, #ff290c 39%, #ff6d2d 60% #bd1009 87%);
+                border: solid 1px #ff290c;
+                border-radius: 30px;
+                box-shadow: 0px 0px 0px 2px #000 inset;
+                color: #fff;
+            }
 
+            &.third {
+                background: linear-gradient(to bottom, #241709 0%, #a87f45 15%, #bb9256 85%, #241709 100%);
+                color: #000;
+
+                &:hover,
+                &:active,
+                &.active {
+                    &.forget {
+                        color: #ffe8c5;
+                        background: linear-gradient(to top, #8b714c 5%, #3c2d1b 80%);
+                    }
+                }
+            }
+        }
     }
 }

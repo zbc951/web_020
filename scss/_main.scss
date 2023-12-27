@@ -3,7 +3,7 @@ main {
     height: auto;
     padding: 120px 0 0 0;
     margin: 0 0 50px 0;
- 
+
 
     .swiper-banner {
         width: 100%;
@@ -45,7 +45,7 @@ main {
                 height: 15px;
                 border-style: solid;
                 border-width: 8px 8px 0 0;
-                border-color: $main_1 $main_1 transparent transparent;
+                border-color: #fff #fff transparent transparent;
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -66,7 +66,7 @@ main {
 
         .swiper-pagination {
             span {
-                background: $main_1 ;
+                background: #fff;
             }
         }
 
@@ -77,24 +77,31 @@ main {
     }
 
     .marqueeArea {
+        background: linear-gradient(to bottom, #2b1b00 10%, #493621 50%, #553f26 100%);
+        border: solid 5px #dac7aa;
+        border-radius: 30px;
+        box-shadow: 0 0 9px 0px #fffbf3;
+
         width: 1300px;
         height: 50px;
-        @include marquee_1;
         display: flex;
         align-items: center;
         margin: 25px auto 55px;
         padding: 0 0 0 15px;
 
         .marqueeTitle {
+            background: #fff6e8;
+            box-shadow: 0px 0px 6px 0px #00000096 inset;
+            border: solid 2px #ffffff;
+            border-radius: 30px;
             width: 180px;
             height: 55px;
-            @include title_1;
             display: flex;
             justify-content: center;
             align-items: center;
 
             p {
-                color: $main_2;
+                color: #000;
                 font-size: 20px;
                 font-weight: bold;
                 letter-spacing: 2px;
@@ -107,7 +114,7 @@ main {
             overflow: hidden;
 
             p {
-                color: $main_1;
+                color: #fff;
                 font-size: 17px;
                 font-weight: bold;
                 display: inline-block;
@@ -160,7 +167,7 @@ main {
                     }
 
                     p {
-                        color: $main_1;
+                        color: #fff;
                         font-size: 20px;
                         font-weight: bold;
                         letter-spacing: 2px;
@@ -535,7 +542,7 @@ main {
 
 
 
-    
+
 
 
 }

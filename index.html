@@ -4,125 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
-    <!-- swiper css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <!-- swiper jq -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <!-- JQ js -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <!-- js -->
-    <script src="./js/javascript.js"></script>
     <title>document</title>
 </head>
 
 <body>
-    <!-- header -->
     <header>
-        <!-- top -->
-        <div class="topArea">
-            <div class="centerArea">
-                <ul class="userList">
-                    <li>
-                        <form action="">
-                            <label for="">
-                                <input type="text" placeholder="帳號">
-                            </label>
-                            <label for="">
-                                <input type="password" placeholder="密碼">
-                            </label>
-                            <label for="" class="rememberAcc">
-                                <input type="checkbox" id="rememberAcc" name="rememberAcc">
-                                <p>記住帳號</p>
-                            </label>
-                            <button type="button" class="signinBtn">
-                                <p>登入</p>
-                            </button>
-                            <button type="button" class="signupBtn">
-                                <p>註冊</p>
-                            </button>
-                        </form>
-                    </li>
-                    <li class="forgetBtn">
-                        <button>
-                            <p>忘記密碼</p>
-                        </button>
-                    </li>
-                    <li class="languageBtn">
-                        <label for="">
-                            <select name="" id="">
-                                <option value="">繁體中文</option>
-                                <option value="">简体中文</option>
-                                <option value="">ENGLISH</option>
-                                <option value="">日本語</option>
-                            </select>
-                        </label>
-                    </li>
-                </ul>
+        <div class="top">
+            <div class="center">
+                <div class="userList">
+                    <label for="">
+                        <input type="text" placeholder="帳號" class="input primary">
+                    </label>
+                    <label for="">
+                        <input type="password" placeholder="密碼" class="input primary">
+                    </label>
+                    <label for="">
+                        <input type="checkbox">
+                        <p>記住帳號</p>
+                    </label>
+                    <button type="button" class="btn primary signin">登入</button>
+                    <button type="button" class="btn second signup">註冊</button>
+                    <button type="button" class="btn third forget">忘記密碼</button>
+                    <div class="lang">
+                        <p>繁體中文</p>
+                        <ul>
+                            <li>
+                                <p>繁體中文</p>
+                            </li>
+                            <li>
+                                <p>简体中文</p>
+                            </li>
+                            <li>
+                                <p>ENGLISH</p>
+                            </li>
+                            <li>
+                                <p>日本語</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- mid -->
-        <div class="underTopArea">
-            <div class="centerArea">
+        <div class="mid">
+            <div class="center">
                 <div class="logo">
                     <img src="./img/logo_img.png" alt="">
                 </div>
-                <ul class="menuArea">
+                <ul class="menu">
                     <li>
-                        <a href="#">
-                            <p>首頁</p>
-                        </a>
+                        <a href="#">首頁</a>
                     </li>
                     <li>
-                        <a href="#">
-                            <p>熱門</p>
-                        </a>
+                        <a href="#">熱門</a>
                     </li>
                     <li>
-                        <a href="#">
-                            <p>體育賽事</p>
-                        </a>
+                        <a href="#">體育賽事</a>
                     </li>
                     <li>
-                        <a href="#">
-                            <p>真人娛樂</p>
-                        </a>
+                        <a href="#">真人娛樂</a>
                     </li>
                     <li>
-                        <a href="#">
-                            <p>彩票</p>
-                        </a>
+                        <a href="#">彩票</a>
                     </li>
                     <li>
-                        <a href="#">
-                            <p>老虎機</p>
-                        </a>
+                        <a href="#">老虎機</a>
                     </li>
                     <li>
-                        <a href="#">
-                            <p>捕魚機</p>
-                        </a>
+                        <a href="#">捕魚機</a>
                     </li>
                     <li>
-                        <a href="#">
-                            <p>棋牌遊戲</p>
-                        </a>
+                        <a href="#">棋牌遊戲</a>
                     </li>
                     <li>
-                        <a href="#">
-                            <p>優惠中心</p>
-                        </a>
+                        <a href="#">優惠中心</a>
                     </li>
                 </ul>
             </div>
         </div>
-        <!-- bottom -->
-        <div class="bottomArea">
-            <div class="listArea">
-                <!-- arrow l -->
+        <div class="bottom">
+            <div class="list">
                 <i class="arrow_ic prev "></i>
-                <!-- sport -->
                 <ul class="sport">
                     <ol>
                         <li>
@@ -135,8 +100,7 @@
                         </li>
                     </ol>
                 </ul>
-                <!-- live -->
-                <ul class="live">
+                <ul class="live ">
                     <ol>
                         <li>
                             <a href="#">
@@ -180,7 +144,6 @@
                         </li>
                     </ol>
                 </ul>
-                <!-- lottery -->
                 <ul class="lottery">
                     <ol>
                         <li>
@@ -209,7 +172,6 @@
                         </li>
                     </ol>
                 </ul>
-                <!-- slot -->
                 <ul class="slot">
                     <ol>
                         <li>
@@ -302,7 +264,6 @@
                         </li>
                     </ol>
                 </ul>
-                <!-- fish -->
                 <ul class="fish">
                     <ol>
                         <li>
@@ -355,7 +316,6 @@
                         </li>
                     </ol>
                 </ul>
-                <!-- card -->
                 <ul class="card">
                     <ol>
                         <li>
@@ -408,14 +368,11 @@
                         </li>
                     </ol>
                 </ul>
-                <!-- arrow r -->
                 <i class="arrow_ic next "></i>
             </div>
         </div>
     </header>
-    <!-- main -->
     <main>
-        <!-- swiper -->
         <section class="swiper-banner">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -432,7 +389,6 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </section>
-        <!-- marquee -->
         <div class="marqueeArea">
             <div class="marqueeTitle">
                 <p>最新資訊</p>
@@ -441,7 +397,6 @@
                 <p>測試跑馬燈測試跑馬燈測試跑馬燈測試跑馬燈測試跑馬燈測試跑馬燈</p>
             </div>
         </div>
-        <!-- grid -->
         <div class="gridArea">
             <ul>
                 <li>
@@ -506,7 +461,6 @@
             </ul>
         </div>
     </main>
-    <!-- footer -->
     <footer>
         <div class="upperHalf">
             <div class="upperHalfCenter">
@@ -544,7 +498,6 @@
             </div>
         </div>
     </footer>
-    <!-- aside -->
     <aside class="download">
         <div>
             <i></i>
@@ -561,8 +514,8 @@
             <i></i>
         </div>
     </aside>
-    <!-- bg -->
     <div class="main_bg"></div>
 </body>
+<script src="./js/script.js"></script>
 
 </html>

@@ -35,7 +35,7 @@ footer {
                         width: 90%;
                         height: 25px;
                         border-style: solid;
-                        border-color: $third_3;
+                        border-color: #da0101;
                         border-width: 0px 0 3px 3px;
                         position: absolute;
                         top: 20px;
@@ -54,14 +54,14 @@ footer {
                         p {
                             font-size: 15px;
                             font-weight: bold;
-                            color: $main_2;
+                            color: #000;
                             position: relative;
 
                             &::before {
                                 content: "";
                                 width: 100%;
                                 height: auto;
-                                border-bottom: solid 1px $main_2;
+                                border-bottom: solid 1px #000;
                                 position: absolute;
                                 top: 20px;
                                 left: 0;
@@ -82,7 +82,7 @@ footer {
                                     display: none;
                                 }
 
-                                color: $third_3;
+                                color: #da0101;
                             }
                         }
                     }
@@ -115,7 +115,7 @@ footer {
                 font-size: 14px;
                 letter-spacing: 1px;
                 font-weight: bold;
-                color: $third_2;
+                color: #ffe8c5;
                 margin: 0 0 20px 0;
                 user-select: text;
             }

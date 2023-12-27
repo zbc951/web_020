@@ -13,7 +13,7 @@ aside {
         div {
             width: 65px;
             height: 200px;
-            background: $linear_1;
+            background: linear-gradient(to right, #dab959 0%, #fff1b8 50%, #dab959 100%);
             border-radius: 50px;
             display: flex;
             flex-direction: column;
@@ -27,7 +27,7 @@ aside {
                 width: 56px;
                 height: 190px;
                 border-radius: 50px;
-                border: solid 2px $border_1 ;
+                border: solid 2px #fff ;
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -48,7 +48,7 @@ aside {
         &:active,
         &.active {
             div {
-               background:$hover_1;
+               background:linear-gradient(to right, #fff1b8 0%, #dab959 50%, #fff1b8 100%);
             }
 
         }
@@ -64,13 +64,13 @@ aside {
             width: 85px;
             height: 65px;
             border-radius: 50px;
-            background: $linear_2;
+            background: linear-gradient(to top, #007d0c 0%, #05a845 50%, #007d0c 100%);
             display: flex;
             align-items: center;
             justify-content: center;
 
             p {
-                color: $main_1;
+                color: #fff;
                 font-size: 18px;
                 font-weight: bold;
             }
@@ -80,7 +80,7 @@ aside {
                 width: 75px;
                 height: 54px;
                 border-radius: 50px;
-                border: solid 2px $border_1 ;
+                border: solid 2px #fff ;
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -109,7 +109,7 @@ aside {
             width: 85px;
             height: 65px;
             border-radius: 50px;
-            background: $linear_3;
+            background: linear-gradient(to top, #001c77 0%, #0052af 50%, #001c77 100%);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -124,7 +124,7 @@ aside {
                 width: 75px;
                 height: 54px;
                 border-radius: 50px;
-                border: solid 2px $border_1 ;
+                border: solid 2px #fff ;
                 position: absolute;
                 top: 50%;
                 left: 50%;
