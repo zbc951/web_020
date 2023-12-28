@@ -1,9 +1,7 @@
 main {
     width: 100%;
     height: auto;
-    padding: 120px 0 0 0;
-    margin: 0 0 50px 0;
-
+    padding: 120px 0 50px 0;
 
     .swiper-banner {
         width: 100%;
@@ -76,20 +74,19 @@ main {
         }
     }
 
-    .marqueeArea {
+    .marquee {
         background: linear-gradient(to bottom, #2b1b00 10%, #493621 50%, #553f26 100%);
         border: solid 5px #dac7aa;
         border-radius: 30px;
         box-shadow: 0 0 9px 0px #fffbf3;
-
         width: 1300px;
         height: 50px;
         display: flex;
         align-items: center;
         margin: 25px auto 55px;
-        padding: 0 0 0 15px;
+        padding-left: 15px;
 
-        .marqueeTitle {
+        >.title {
             background: #fff6e8;
             box-shadow: 0px 0px 6px 0px #00000096 inset;
             border: solid 2px #ffffff;
@@ -108,7 +105,7 @@ main {
             }
         }
 
-        .marqueeTextBox {
+        >.textBox {
             width: 100%;
             height: auto;
             overflow: hidden;
@@ -120,10 +117,10 @@ main {
                 display: inline-block;
                 white-space: nowrap;
                 padding-left: 100%;
-                animation: marqueeMove 15s linear 0s infinite;
+                animation: marquee 15s linear 0s infinite;
             }
 
-            @keyframes marqueeMove {
+            @keyframes marquee {
                 0% {
                     transform: translateX(0);
                 }
@@ -135,7 +132,7 @@ main {
         }
     }
 
-    .gridArea {
+    .typeList {
         width: 1400px;
         height: auto;
         margin: 0 auto;
@@ -541,8 +538,86 @@ main {
 
 
 
+    .wrap {
+        width: 1400px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 70px 0 20px;
+        margin: 0 auto;
+
+        .textBox {
+            height: auto;
+            padding-top: 148px;
+
+            .title {
+                background: linear-gradient(to bottom, #c4a167 0%, #996c33 100%);
+                font-weight: bold;
+                display: flex;
+                align-items: flex-end;
+                background-clip: text;
+
+                p {
+                    white-space: nowrap;
+                    color: transparent;
+                    letter-spacing: 6px;
 
 
+                    &.big {
+                        font-size: 62px;
+                    }
+
+                    &.small {
+                        font-size: 42px;
+                        margin-left: 16px;
+                        padding-bottom: 5px;
+                    }
+                }
+            }
+
+            .mainCnt {
+                width: 630px;
+                margin: 50px 0;
+                font-size: 14px;
+                font-weight: bold;
+                letter-spacing: 1px;
+                line-height: 24px;
+            }
+
+            .btnBox {
+                width: 630px;
+                height: auto;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 15px;
+                align-items: center;
+
+                li {
+                    width: auto;
+                    height: auto;
+                    cursor: pointer;
 
 
+                    img {
+                        width: 189px;
+                        height: 185px;
+                        margin: 0 auto;
+                        object-fit: cover;
+                        object-position: top;
+
+                        &:hover,
+                        &:active,
+                        &.active {
+                            object-position: bottom;
+                        }
+                    }
+
+                    p {
+                        padding-top: 10px;
+                    }
+
+                }
+            }
+        }
+    }
 }

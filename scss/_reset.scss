@@ -67,6 +67,7 @@ button {
 select,input {
     outline: none;
     box-sizing: border-box;
+    border: none;
     font-family: "微軟正黑體";
     appearance: none;
 }
@@ -91,4 +92,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     // display: none;
     // appearance: none;
     opacity: 0;
+}
+img {
+    display: block;
 }

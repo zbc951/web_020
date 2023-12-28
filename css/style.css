@@ -81,6 +81,7 @@ select, input {
   outline: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border: none;
   font-family: "微軟正黑體";
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -108,42 +109,46 @@ input[type=date]::-webkit-calendar-picker-indicator {
   opacity: 0;
 }
 
-html body .main_bg {
+img {
+  display: block;
+}
+
+html body .bg {
   background: url("../img/mian_bg.png") no-repeat center center;
   background-size: cover;
 }
 
-html body main .gridArea ul li .gameSelect i {
+html body main .typeList ul li .gameSelect i {
   background: url("../img/grid_public.png") no-repeat center;
   background-size: contain;
 }
 
-html body main .gridArea ul li .gameSelect.sport {
+html body main .typeList ul li .gameSelect.sport {
   background: url("../img/grid_sport_box.png") no-repeat center;
   background-size: contain;
 }
 
-html body main .gridArea ul li .gameSelect.live {
+html body main .typeList ul li .gameSelect.live {
   background: url("../img/grid_live_box.png") no-repeat center;
   background-size: contain;
 }
 
-html body main .gridArea ul li .gameSelect.slot {
+html body main .typeList ul li .gameSelect.slot {
   background: url("../img/grid_slot_box.png") no-repeat center;
   background-size: contain;
 }
 
-html body main .gridArea ul li .gameSelect.lottery {
+html body main .typeList ul li .gameSelect.lottery {
   background: url("../img/grid_lottery_box.png") no-repeat center;
   background-size: contain;
 }
 
-html body main .gridArea ul li .gameSelect.board {
+html body main .typeList ul li .gameSelect.board {
   background: url("../img/grid_board_box.png") no-repeat center;
   background-size: contain;
 }
 
-html body main .gridArea ul li .gameSelect.fish {
+html body main .typeList ul li .gameSelect.fish {
   background: url("../img/grid_fish_box.png") no-repeat center;
   background-size: contain;
 }
@@ -168,14 +173,377 @@ html body aside.service div i {
   background-size: contain;
 }
 
+.bg.gamePage_BG {
+  background: url("../img/gamePage_Bg.png") no-repeat top center;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #dfdfdf;
+}
+
+header .logo img {
+  width: 200px;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+header .downList img {
+  width: 220px;
+  height: 184px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.swiper .banner {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.home .gameBlock img {
+  width: 100%;
+  height: 270px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+main .eventWrap .eventTitle {
+  background: url("../img/eventTitle_bg.png") no-repeat center;
+  background-size: cover;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .currentLevel {
+  background: url("../img/medal_01.png") no-repeat;
+  background-size: 100%;
+  width: 80px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 30px;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(1) {
+  background: url("../img/vipLevel_01.png") no-repeat;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(1) .medal {
+  background: url("../img/medal_01.png") no-repeat;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(2) {
+  background: url("../img/vipLevel_02.png") no-repeat;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(2) .medal {
+  background: url("../img/medal_02.png") no-repeat;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(3) {
+  background: url("../img/vipLevel_01.png") no-repeat;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(3) .medal {
+  background: url("../img/medal_03.png") no-repeat;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(4) {
+  background: url("../img/vipLevel_04.png") no-repeat;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(4) .medal {
+  background: url("../img/medal_04.png") no-repeat;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(5) {
+  background: url("../img/vipLevel_05.png") no-repeat;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(5) .medal {
+  background: url("../img/medal_05.png") no-repeat;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(6) {
+  background: url("../img/vipLevel_06.png") no-repeat;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(6) .medal {
+  background: url("../img/medal_06.png") no-repeat;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(7) {
+  background: url("../img/vipLevel_07.png") no-repeat;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(7) .medal {
+  background: url("../img/medal_07.png") no-repeat;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.deposit .midTop .objectList .payType li:nth-of-type(1) .pay_Icon {
+  background: url("../img/icon/svg/payWay01.svg") no-repeat center;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.deposit .midTop .objectList .payType li:nth-of-type(2) .pay_Icon {
+  background: url("../img/icon/svg/payWay02.svg") no-repeat center;
+  background-size: 100%;
+  width: 22px;
+  height: 22px;
+}
+
+.innerPage .center > div.midSide.deposit .midTop .objectList .payType li:nth-of-type(3) .pay_Icon {
+  background: url("../img/icon/svg/payWay03.svg") no-repeat center;
+  background-size: 100%;
+  width: 22px;
+  height: 22px;
+}
+
+.innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet li.addCard .addBtn {
+  width: 50px;
+  height: 50px;
+  background: url("../img/icon/svg/addCard.svg") no-repeat center;
+  background-size: 100%;
+}
+
+main .helpWrap .helpBody .container div .img.withdraw01 {
+  background: url("../img/help/withdraw01.png") no-repeat;
+  background-size: 100%;
+  height: 749px;
+}
+
+main .helpWrap .helpBody .container div .img.transfer01 {
+  background: url("../img/help/transfer01.png") no-repeat;
+  background-size: 100%;
+  height: 957px;
+}
+
+main .helpWrap .helpBody .container div .img.remote01 {
+  background: url("../img/help/remote01.png") no-repeat;
+  background-size: 100%;
+  width: 187px;
+  height: 144px;
+}
+
+main .helpWrap .helpBody .container div .img.remote02 {
+  background: url("../img/help/remote02.png") no-repeat;
+  background-size: 100%;
+  width: 275px;
+  height: 379px;
+}
+
+.registerWrap {
+  background: url("../img/register_background.png") no-repeat center;
+  background-size: cover;
+}
+
+.registerWrap .signUpBlock .decPic {
+  background: url("../img/register_background2.png") no-repeat center;
+  background-size: cover;
+}
+
+aside.app .download_ic {
+  width: 25px;
+  height: 25px;
+  background: url("../img/icon/download.png") no-repeat center;
+  background-size: 100%;
+}
+
+aside.cs .csBtn_ic {
+  width: 30px;
+  height: 30px;
+  background: url("../img/icon/svg/csBtn.svg") no-repeat center;
+  background-size: 100%;
+}
+
 html {
   width: 100%;
   height: 100%;
 }
 html body {
   width: 100%;
-  height: 100%;
+  height: auto;
   position: relative;
+}
+html body .registerWrap {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+html body .registerWrap .signUpBlock {
+  width: 865px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+html body .registerWrap .signUpBlock .decPic {
+  width: 50%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .registerWrap .signUpBlock .signBlock {
+  width: 50%;
+  height: auto;
+  padding: 40px;
+}
+html body .registerWrap .signUpBlock .signBlock .title {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+html body .registerWrap .signUpBlock .signBlock .title i {
+  margin-right: 20px;
+}
+html body .registerWrap .signUpBlock .signBlock form {
+  width: 100%;
+  height: auto;
+}
+html body .registerWrap .signUpBlock .signBlock form label {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+html body .registerWrap .signUpBlock .signBlock form label:nth-of-type(2) {
+  position: relative;
+}
+html body .registerWrap .signUpBlock .signBlock form label:nth-of-type(2) i {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 35%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
+}
+html body .registerWrap .signUpBlock .signBlock form label:nth-of-type(4) .outer {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 5px 0 0;
+}
+html body .registerWrap .signUpBlock .signBlock form label:nth-of-type(4) .outer input {
+  width: 100%;
+}
+html body .registerWrap .signUpBlock .signBlock form label:nth-of-type(4) .outer button {
+  width: 85px;
+  height: 30px;
+  white-space: nowrap;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .registerWrap .signUpBlock .signBlock form label input {
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+}
+html body .registerWrap .signUpBlock .signBlock form label .remind {
+  margin: 5px 0;
+}
+html body .registerWrap .signUpBlock .signBlock .policy {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px auto;
+}
+html body .registerWrap .signUpBlock .signBlock .policy label {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+}
+html body .registerWrap .signUpBlock .signBlock .policy label input {
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  margin: 0;
+  padding: 0;
+}
+html body .registerWrap .signUpBlock .signBlock .policy p {
+  margin-left: 10px;
+}
+html body .registerWrap .signUpBlock .signBlock button.check, html body .registerWrap .signUpBlock .signBlock button.enter {
+  width: 100%;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+}
+html body .registerWrap .signUpBlock .signBlock button.check {
+  margin-bottom: 10px;
 }
 html body header {
   width: 100%;
@@ -261,18 +629,12 @@ html body header .top .center .userList > label input[type=password]::placeholde
   text-align: start;
 }
 html body header .top .center .userList > label input[type=checkbox] {
-  background: #fff;
-  border: solid 1px #000;
-  border-radius: 3px;
   width: 14px;
   height: 14px;
   position: relative;
   cursor: pointer;
 }
 html body header .top .center .userList > label input[type=checkbox]::before {
-  border-color: #da0101;
-  border-style: solid;
-  border-width: 3px 3px 0 0;
   content: "";
   width: 12px;
   height: 4px;
@@ -281,10 +643,6 @@ html body header .top .center .userList > label input[type=checkbox]::before {
   left: 0px;
   -webkit-transform: rotate(130deg);
           transform: rotate(130deg);
-  opacity: 0;
-}
-html body header .top .center .userList > label input[type=checkbox]:checked::before {
-  opacity: 1;
 }
 html body header .top .center .userList > label > p {
   color: #fff;
@@ -299,8 +657,7 @@ html body header .top .center .userList .btn.signin, html body header .top .cent
   font-weight: bold;
   margin-right: 10px;
 }
-html body header .top .center .userList .btn.forget {
-  width: auto;
+html body header .top .center .userList .btn.forget, html body header .top .center .userList .btn.signout, html body header .top .center .userList .btn.mail, html body header .top .center .userList .btn.member, html body header .top .center .userList .btn.withdraw, html body header .top .center .userList .btn.transfer, html body header .top .center .userList .btn.deposit {
   height: 100%;
   font-size: 14px;
   font-weight: bold;
@@ -308,10 +665,34 @@ html body header .top .center .userList .btn.forget {
   padding: 0 20px;
   margin-right: 5px;
 }
+html body header .top .center .userList .btn.notice {
+  position: relative;
+}
+html body header .top .center .userList .btn.notice::after {
+  background: #fae8c1;
+  color: #000000;
+  content: "10";
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50px;
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  font-size: 11px;
+  font-weight: bold;
+}
 html body header .top .center .userList .lang {
   background: -webkit-gradient(linear, left top, left bottom, from(#241709), color-stop(15%, #a87f45), color-stop(85%, #bb9256), to(#241709));
   background: linear-gradient(to bottom, #241709 0%, #a87f45 15%, #bb9256 85%, #241709 100%);
-  color: #000;
   width: 100px;
   height: 100%;
   display: -webkit-box;
@@ -367,7 +748,7 @@ html body header .top .center .userList .lang > ul {
   display: none;
 }
 html body header .top .center .userList .lang > ul li {
-  padding: 3px 15px;
+  padding: 5px 15px;
 }
 html body header .top .center .userList .lang > ul li:hover, html body header .top .center .userList .lang > ul li:active, html body header .top .center .userList .lang > ul li.active {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #8b714c), color-stop(80%, #3c2d1b));
@@ -375,6 +756,111 @@ html body header .top .center .userList .lang > ul li:hover, html body header .t
 }
 html body header .top .center .userList .lang > ul li:hover > p, html body header .top .center .userList .lang > ul li:active > p, html body header .top .center .userList .lang > ul li.active > p {
   color: #ffe8c5;
+}
+html body header .top .center .userList .total {
+  background: -webkit-gradient(linear, left top, left bottom, from(#241709), color-stop(15%, #a87f45), color-stop(85%, #bb9256), to(#241709));
+  background: linear-gradient(to bottom, #241709 0%, #a87f45 15%, #bb9256 85%, #241709 100%);
+  width: 80px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+  position: relative;
+  cursor: pointer;
+  margin-right: 5px;
+}
+html body header .top .center .userList .total.display > ul {
+  display: block;
+}
+html body header .top .center .userList .total p {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+html body header .top .center .userList .total p.itme {
+  color: #000;
+}
+html body header .top .center .userList .total p.value {
+  color: #ff0000;
+}
+html body header .top .center .userList .total::after {
+  border-color: #000 transparent;
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  pointer-events: none;
+}
+html body header .top .center .userList .total:hover, html body header .top .center .userList .total:active, html body header .top .center .userList .total.active {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #8b714c), color-stop(80%, #3c2d1b));
+  background: linear-gradient(to top, #8b714c 5%, #3c2d1b 80%);
+}
+html body header .top .center .userList .total:hover > p, html body header .top .center .userList .total:active > p, html body header .top .center .userList .total.active > p {
+  color: #ffe8c5;
+}
+html body header .top .center .userList .total:hover::after, html body header .top .center .userList .total:active::after, html body header .top .center .userList .total.active::after {
+  border-color: #ffe8c5 transparent;
+}
+html body header .top .center .userList .total > ul {
+  background: -webkit-gradient(linear, left top, left bottom, from(#241709), color-stop(15%, #a87f45), color-stop(85%, #bb9256), to(#241709));
+  background: linear-gradient(to bottom, #241709 0%, #a87f45 15%, #bb9256 85%, #241709 100%);
+  width: 290px;
+  height: auto;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  padding: 5px 0;
+  display: none;
+}
+html body header .top .center .userList .total > ul li {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body header .top .center .userList .total > ul li:hover, html body header .top .center .userList .total > ul li:active, html body header .top .center .userList .total > ul li.active {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #8b714c), color-stop(80%, #3c2d1b));
+  background: linear-gradient(to top, #8b714c 5%, #3c2d1b 80%);
+}
+html body header .top .center .userList .total > ul li:hover > p, html body header .top .center .userList .total > ul li:active > p, html body header .top .center .userList .total > ul li.active > p {
+  color: #ffe8c5;
+}
+html body header .top .center .userList .userName {
+  color: #777777;
+  background: -webkit-gradient(linear, left top, left bottom, from(#241709), color-stop(15%, #a87f45), color-stop(85%, #bb9256), to(#241709));
+  background: linear-gradient(to bottom, #241709 0%, #a87f45 15%, #bb9256 85%, #241709 100%);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+  position: relative;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+html body header .top .center .userList .userName span {
+  color: #008599;
+  margin-right: 20px;
 }
 html body header .mid {
   background: -webkit-gradient(linear, left bottom, left top, from(#856a49), color-stop(50%, #f3ce92), to(#ffedd0));
@@ -634,8 +1120,7 @@ html body header .bottom .list .arrow_ic.next {
 html body main {
   width: 100%;
   height: auto;
-  padding: 120px 0 0 0;
-  margin: 0 0 50px 0;
+  padding: 120px 0 50px 0;
 }
 html body main .swiper-banner {
   width: 100%;
@@ -698,7 +1183,7 @@ html body main .swiper-banner .swiper-horizontal > .swiper-pagination-bullets,
 html body main .swiper-banner .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 17px;
 }
-html body main .marqueeArea {
+html body main .marquee {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #2b1b00), color-stop(50%, #493621), to(#553f26));
   background: linear-gradient(to bottom, #2b1b00 10%, #493621 50%, #553f26 100%);
   border: solid 5px #dac7aa;
@@ -714,9 +1199,9 @@ html body main .marqueeArea {
       -ms-flex-align: center;
           align-items: center;
   margin: 25px auto 55px;
-  padding: 0 0 0 15px;
+  padding-left: 15px;
 }
-html body main .marqueeArea .marqueeTitle {
+html body main .marquee > .title {
   background: #fff6e8;
   -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5882352941) inset;
           box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5882352941) inset;
@@ -734,28 +1219,28 @@ html body main .marqueeArea .marqueeTitle {
       -ms-flex-align: center;
           align-items: center;
 }
-html body main .marqueeArea .marqueeTitle p {
+html body main .marquee > .title p {
   color: #000;
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 2px;
 }
-html body main .marqueeArea .marqueeTextBox {
+html body main .marquee > .textBox {
   width: 100%;
   height: auto;
   overflow: hidden;
 }
-html body main .marqueeArea .marqueeTextBox p {
+html body main .marquee > .textBox p {
   color: #fff;
   font-size: 17px;
   font-weight: bold;
   display: inline-block;
   white-space: nowrap;
   padding-left: 100%;
-  -webkit-animation: marqueeMove 15s linear 0s infinite;
-          animation: marqueeMove 15s linear 0s infinite;
+  -webkit-animation: marquee 15s linear 0s infinite;
+          animation: marquee 15s linear 0s infinite;
 }
-@-webkit-keyframes marqueeMove {
+@-webkit-keyframes marquee {
   0% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -765,7 +1250,7 @@ html body main .marqueeArea .marqueeTextBox p {
             transform: translateX(-100%);
   }
 }
-@keyframes marqueeMove {
+@keyframes marquee {
   0% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -775,12 +1260,12 @@ html body main .marqueeArea .marqueeTextBox p {
             transform: translateX(-100%);
   }
 }
-html body main .gridArea {
+html body main .typeList {
   width: 1400px;
   height: auto;
   margin: 0 auto;
 }
-html body main .gridArea ul {
+html body main .typeList ul {
   width: 100%;
   height: auto;
   display: -ms-grid;
@@ -788,17 +1273,17 @@ html body main .gridArea ul {
   grid-template-columns: repeat(auto-fill, minmax(337px, 1fr));
   gap: 0px;
 }
-html body main .gridArea ul li {
+html body main .typeList ul li {
   width: 337px;
   height: auto;
 }
-html body main .gridArea ul li .gameSelect {
+html body main .typeList ul li .gameSelect {
   width: 100%;
   height: 281px;
   position: relative;
   cursor: pointer;
 }
-html body main .gridArea ul li .gameSelect i {
+html body main .typeList ul li .gameSelect i {
   width: 100%;
   height: 50px;
   position: absolute;
@@ -806,7 +1291,7 @@ html body main .gridArea ul li .gameSelect i {
   left: 0;
   z-index: 5;
 }
-html body main .gridArea ul li .gameSelect p {
+html body main .typeList ul li .gameSelect p {
   color: #fff;
   font-size: 20px;
   font-weight: bold;
@@ -818,7 +1303,7 @@ html body main .gridArea ul li .gameSelect p {
           transform: translateX(-50%);
   z-index: 9;
 }
-html body main .gridArea ul li .gameSelect .trigger {
+html body main .typeList ul li .gameSelect .trigger {
   width: 310px;
   height: 257px;
   border-radius: 30px;
@@ -829,7 +1314,7 @@ html body main .gridArea ul li .gameSelect .trigger {
           transform: translate(-50%, -50%);
   overflow: hidden;
 }
-html body main .gridArea ul li .gameSelect .trigger img {
+html body main .typeList ul li .gameSelect .trigger img {
   width: auto;
   height: auto;
   -o-object-fit: contain;
@@ -839,20 +1324,20 @@ html body main .gridArea ul li .gameSelect .trigger img {
   left: 0;
   z-index: 3;
 }
-html body main .gridArea ul li .gameSelect.sport .trigger img {
+html body main .typeList ul li .gameSelect.sport .trigger img {
   top: 5px;
   left: 18px;
 }
-html body main .gridArea ul li .gameSelect.sport .trigger img.sport_move_1 {
+html body main .typeList ul li .gameSelect.sport .trigger img.sport_move_1 {
   opacity: 1;
 }
-html body main .gridArea ul li .gameSelect.sport .trigger img.sport_move_2 {
+html body main .typeList ul li .gameSelect.sport .trigger img.sport_move_2 {
   opacity: 0;
 }
-html body main .gridArea ul li .gameSelect.sport .trigger img.sport_move_3 {
+html body main .typeList ul li .gameSelect.sport .trigger img.sport_move_3 {
   opacity: 0;
 }
-html body main .gridArea ul li .gameSelect.sport .trigger:hover .sport_move, html body main .gridArea ul li .gameSelect.sport .trigger:active .sport_move, html body main .gridArea ul li .gameSelect.sport .trigger.active .sport_move {
+html body main .typeList ul li .gameSelect.sport .trigger:hover .sport_move, html body main .typeList ul li .gameSelect.sport .trigger:active .sport_move, html body main .typeList ul li .gameSelect.sport .trigger.active .sport_move {
   -webkit-animation: sport_move 0.8s ease-in-out 0s, sport_hover 3s ease-in-out 3s infinite;
           animation: sport_move 0.8s ease-in-out 0s, sport_hover 3s ease-in-out 3s infinite;
 }
@@ -916,27 +1401,27 @@ html body main .gridArea ul li .gameSelect.sport .trigger:hover .sport_move, htm
             transform: translateX(0%);
   }
 }
-html body main .gridArea ul li .gameSelect.sport .trigger:hover .sport_move.sport_move_1, html body main .gridArea ul li .gameSelect.sport .trigger:active .sport_move.sport_move_1, html body main .gridArea ul li .gameSelect.sport .trigger.active .sport_move.sport_move_1 {
+html body main .typeList ul li .gameSelect.sport .trigger:hover .sport_move.sport_move_1, html body main .typeList ul li .gameSelect.sport .trigger:active .sport_move.sport_move_1, html body main .typeList ul li .gameSelect.sport .trigger.active .sport_move.sport_move_1 {
   opacity: 1;
   z-index: 3;
 }
-html body main .gridArea ul li .gameSelect.sport .trigger:hover .sport_move.sport_move_2, html body main .gridArea ul li .gameSelect.sport .trigger:active .sport_move.sport_move_2, html body main .gridArea ul li .gameSelect.sport .trigger.active .sport_move.sport_move_2 {
+html body main .typeList ul li .gameSelect.sport .trigger:hover .sport_move.sport_move_2, html body main .typeList ul li .gameSelect.sport .trigger:active .sport_move.sport_move_2, html body main .typeList ul li .gameSelect.sport .trigger.active .sport_move.sport_move_2 {
   opacity: 0.5;
   -webkit-animation-delay: 0.1s, 4s;
           animation-delay: 0.1s, 4s;
   z-index: 2;
 }
-html body main .gridArea ul li .gameSelect.sport .trigger:hover .sport_move.sport_move_3, html body main .gridArea ul li .gameSelect.sport .trigger:active .sport_move.sport_move_3, html body main .gridArea ul li .gameSelect.sport .trigger.active .sport_move.sport_move_3 {
+html body main .typeList ul li .gameSelect.sport .trigger:hover .sport_move.sport_move_3, html body main .typeList ul li .gameSelect.sport .trigger:active .sport_move.sport_move_3, html body main .typeList ul li .gameSelect.sport .trigger.active .sport_move.sport_move_3 {
   opacity: 0.3;
   -webkit-animation-delay: 0.2s, 5s;
           animation-delay: 0.2s, 5s;
   z-index: 1;
 }
-html body main .gridArea ul li .gameSelect.live .trigger img {
+html body main .typeList ul li .gameSelect.live .trigger img {
   top: 6px;
   left: 59px;
 }
-html body main .gridArea ul li .gameSelect.live .trigger:hover img, html body main .gridArea ul li .gameSelect.live .trigger:active img, html body main .gridArea ul li .gameSelect.live .trigger.active img {
+html body main .typeList ul li .gameSelect.live .trigger:hover img, html body main .typeList ul li .gameSelect.live .trigger:active img, html body main .typeList ul li .gameSelect.live .trigger.active img {
   -webkit-animation: live_move 0.8s ease-in-out, live_hover 5s ease-in-out 3s infinite;
           animation: live_move 0.8s ease-in-out, live_hover 5s ease-in-out 3s infinite;
 }
@@ -1008,11 +1493,11 @@ html body main .gridArea ul li .gameSelect.live .trigger:hover img, html body ma
             transform: scaleX(1);
   }
 }
-html body main .gridArea ul li .gameSelect.slot .trigger img {
+html body main .typeList ul li .gameSelect.slot .trigger img {
   top: 14px;
   left: -10px;
 }
-html body main .gridArea ul li .gameSelect.slot .trigger:hover img, html body main .gridArea ul li .gameSelect.slot .trigger:active img, html body main .gridArea ul li .gameSelect.slot .trigger.active img {
+html body main .typeList ul li .gameSelect.slot .trigger:hover img, html body main .typeList ul li .gameSelect.slot .trigger:active img, html body main .typeList ul li .gameSelect.slot .trigger.active img {
   -webkit-animation: slot_move 0.3s linear, slot_hover 3s linear 3s infinite;
           animation: slot_move 0.3s linear, slot_hover 3s linear 3s infinite;
 }
@@ -1086,11 +1571,11 @@ html body main .gridArea ul li .gameSelect.slot .trigger:hover img, html body ma
             transform: rotate(0deg);
   }
 }
-html body main .gridArea ul li .gameSelect.lottery .trigger img {
+html body main .typeList ul li .gameSelect.lottery .trigger img {
   top: 22px;
   left: 46px;
 }
-html body main .gridArea ul li .gameSelect.lottery .trigger:hover img, html body main .gridArea ul li .gameSelect.lottery .trigger:active img, html body main .gridArea ul li .gameSelect.lottery .trigger.active img {
+html body main .typeList ul li .gameSelect.lottery .trigger:hover img, html body main .typeList ul li .gameSelect.lottery .trigger:active img, html body main .typeList ul li .gameSelect.lottery .trigger.active img {
   -webkit-animation: lottery_move 1s linear 1, lottery_hover 3s ease-in-out 3s infinite;
           animation: lottery_move 1s linear 1, lottery_hover 3s ease-in-out 3s infinite;
 }
@@ -1162,11 +1647,11 @@ html body main .gridArea ul li .gameSelect.lottery .trigger:hover img, html body
             transform: rotate(0deg);
   }
 }
-html body main .gridArea ul li .gameSelect.board .trigger img {
+html body main .typeList ul li .gameSelect.board .trigger img {
   top: 21px;
   left: 36px;
 }
-html body main .gridArea ul li .gameSelect.board .trigger:hover img, html body main .gridArea ul li .gameSelect.board .trigger:active img, html body main .gridArea ul li .gameSelect.board .trigger.active img {
+html body main .typeList ul li .gameSelect.board .trigger:hover img, html body main .typeList ul li .gameSelect.board .trigger:active img, html body main .typeList ul li .gameSelect.board .trigger.active img {
   -webkit-animation: board_move 0.3s linear 1, board_hover 3s linear 3s infinite;
           animation: board_move 0.3s linear 1, board_hover 3s linear 3s infinite;
 }
@@ -1226,11 +1711,11 @@ html body main .gridArea ul li .gameSelect.board .trigger:hover img, html body m
     opacity: 1;
   }
 }
-html body main .gridArea ul li .gameSelect.fish .trigger img {
+html body main .typeList ul li .gameSelect.fish .trigger img {
   top: 0;
   left: 13px;
 }
-html body main .gridArea ul li .gameSelect.fish .trigger:hover img, html body main .gridArea ul li .gameSelect.fish .trigger:active img, html body main .gridArea ul li .gameSelect.fish .trigger.active img {
+html body main .typeList ul li .gameSelect.fish .trigger:hover img, html body main .typeList ul li .gameSelect.fish .trigger:active img, html body main .typeList ul li .gameSelect.fish .trigger.active img {
   -webkit-animation: fish_move 0.3s linear 1, fish_hover 2s linear 3s infinite;
           animation: fish_move 0.3s linear 1, fish_hover 2s linear 3s infinite;
 }
@@ -1294,11 +1779,2715 @@ html body main .gridArea ul li .gameSelect.fish .trigger:hover img, html body ma
             transform: translate(0);
   }
 }
-html body main .gridArea ul li.declare img {
+html body main .typeList ul li.declare img {
   width: auto;
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
+}
+html body main .wrap {
+  width: 1400px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 70px 0 20px;
+  margin: 0 auto;
+}
+html body main .wrap .textBox {
+  height: auto;
+  padding-top: 148px;
+}
+html body main .wrap .textBox .title {
+  background: -webkit-gradient(linear, left top, left bottom, from(#c4a167), to(#996c33));
+  background: linear-gradient(to bottom, #c4a167 0%, #996c33 100%);
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+html body main .wrap .textBox .title p {
+  white-space: nowrap;
+  color: transparent;
+  letter-spacing: 6px;
+}
+html body main .wrap .textBox .title p.big {
+  font-size: 62px;
+}
+html body main .wrap .textBox .title p.small {
+  font-size: 42px;
+  margin-left: 16px;
+  padding-bottom: 5px;
+}
+html body main .wrap .textBox .mainCnt {
+  width: 630px;
+  margin: 50px 0;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+html body main .wrap .textBox .btnBox {
+  width: 630px;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 15px 1fr 15px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body main .wrap .textBox .btnBox li {
+  width: auto;
+  height: auto;
+  cursor: pointer;
+}
+html body main .wrap .textBox .btnBox li img {
+  width: 189px;
+  height: 185px;
+  margin: 0 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+html body main .wrap .textBox .btnBox li img:hover, html body main .wrap .textBox .btnBox li img:active, html body main .wrap .textBox .btnBox li img.active {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+html body main .wrap .textBox .btnBox li p {
+  padding-top: 10px;
+}
+html body .innerPage .marqueeWrap {
+  width: 1400px;
+  height: 50px;
+}
+html body .innerPage .center {
+  width: 1400px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 0 40px;
+  margin: 0 auto;
+}
+html body .innerPage .center > div {
+  height: auto;
+}
+html body .innerPage .center > div.leftSide {
+  width: 17%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 15px;
+}
+html body .innerPage .center > div.leftSide .content {
+  width: 100%;
+  height: 100%;
+  padding: 20px 0 0 0;
+}
+html body .innerPage .center > div.leftSide .content p {
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+html body .innerPage .center > div.leftSide .content p.userAccount .level {
+  padding: 2px 8px;
+  margin-left: 5px;
+}
+html body .innerPage .center > div.leftSide .content p.joinDay {
+  margin-top: 10px;
+}
+html body .innerPage .center > div.leftSide .content .quickSelect {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 25px;
+}
+html body .innerPage .center > div.leftSide .content .quickSelect li {
+  width: 32%;
+  height: auto;
+}
+html body .innerPage .center > div.leftSide .content .quickSelect li .quickBtn {
+  width: 42px;
+  height: 42px;
+  margin: 0 auto;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+html body .innerPage .center > div.leftSide .content .quickSelect li .quickBtn a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .innerPage .center > div.leftSide .content .quickSelect li .btnName {
+  text-align: center;
+  margin-top: 5px;
+}
+html body .innerPage .center > div.leftSide .content .innerNav {
+  width: 100%;
+  height: auto;
+}
+html body .innerPage .center > div.leftSide .content .innerNav li {
+  width: 100%;
+  height: 50px;
+  display: block;
+}
+html body .innerPage .center > div.leftSide .content .innerNav li a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: transparent;
+  padding: 0 25px;
+  position: relative;
+}
+html body .innerPage .center > div.leftSide .content .innerNav li a::before {
+  content: "";
+  width: 4px;
+  height: 100%;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+html body .innerPage .center > div.leftSide .content .innerNav li a i {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
+}
+html body .innerPage .center > div.rightSide {
+  width: 17%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-left: 15px;
+}
+html body .innerPage .center > div.rightSide .containerBox {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+html body .innerPage .center > div.rightSide .containerBox:last-child {
+  margin-bottom: 0;
+}
+html body .innerPage .center > div.rightSide .containerBox .listTitle {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 20px;
+}
+html body .innerPage .center > div.rightSide .containerBox .listTitle .more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+html body .innerPage .center > div.rightSide .containerBox .listTitle .more i {
+  margin-left: 5px;
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList {
+  width: 100%;
+  height: 305px;
+  overflow: auto;
+  position: relative;
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList .noData {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain {
+  width: 100%;
+  height: auto;
+  overflow-y: overlay;
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li {
+  width: 83%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 0;
+  margin: 0 auto;
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li.betHistory {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 0;
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li.eventBlock {
+  border-bottom: none;
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li.eventBlock img {
+  width: 100%;
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li.eventBlock .eventInfo {
+  margin-top: 10px;
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li .state {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li .detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 10px;
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li .detail i {
+  margin: 0 10px;
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li .winLose {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li .winLose .half {
+  width: 50%;
+  height: auto;
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li .winLose .half span {
+  display: block;
+  margin-bottom: 5px;
+}
+html body .innerPage .center > div.midSide {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+html body .innerPage .center > div.midSide .innerPageTitle {
+  width: 100%;
+  height: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+}
+html body .innerPage .center > div.midSide .innerPageTitle .btn {
+  width: auto;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10px;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide .innerPageTitle .btn p {
+  font-size: 14px;
+  margin: 2px 0 2px 5px;
+}
+html body .innerPage .center > div.midSide .innerPageTitle .btn i {
+  font-size: 15px;
+}
+html body .innerPage .center > div.midSide .midTop {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+html body .innerPage .center > div.midSide .midTop .objectList {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 15px;
+}
+html body .innerPage .center > div.midSide .midTop .objectList i {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .innerPage .center > div.midSide .midTop .objectList i.fa-chevron-left, html body .innerPage .center > div.midSide .midTop .objectList i.fa-chevron-right {
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide .midTop .objectList ul {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 25px;
+  position: relative;
+}
+html body .innerPage .center > div.midSide .midTop .objectList ul li {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 15px;
+}
+html body .innerPage .center > div.midSide .midTop .accountWrap {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+html body .innerPage .center > div.midSide .midTop .accountWrap .typeBox {
+  width: 20%;
+  height: auto;
+}
+html body .innerPage .center > div.midSide .midTop .accountWrap .typeBox:nth-of-type(2) .typeName {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .innerPage .center > div.midSide .midTop .accountWrap .typeBox:nth-of-type(2) .typeName span {
+  width: auto;
+  height: auto;
+  padding: 3px 8px 4px;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide .midTop .accountWrap .typeBox .typeName {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+html body .innerPage .center > div.midSide .midTop .accountWrap .typeBox .typeName i {
+  margin-left: 10px;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide .midTop .platformWallet {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+html body .innerPage .center > div.midSide .midTop .platformWallet .titleS {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+html body .innerPage .center > div.midSide .midTop .platformWallet .platformOuter {
+  width: 100%;
+  height: 110px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 15px 1fr 15px 1fr 15px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  overflow: hidden;
+}
+html body .innerPage .center > div.midSide .midTop .platformWallet .platformOuter.active {
+  height: auto;
+}
+html body .innerPage .center > div.midSide .midTop .platformWallet .platformOuter .platformBox {
+  width: 100%;
+  height: 100px;
+  padding: 15px;
+}
+html body .innerPage .center > div.midSide .midTop .platformWallet .platformOuter .platformBox .num {
+  margin-top: 15px;
+}
+html body .innerPage .center > div.midSide .midTop .platformWallet .stateWrap {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide .midTop .platformWallet .stateWrap i {
+  margin-left: 10px;
+}
+html body .innerPage .center > div.midSide .midTop form label {
+  margin-bottom: 20px;
+  position: relative;
+}
+html body .innerPage .center > div.midSide .midTop form i.fa-caret-down {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html body .innerPage .center > div.midSide .midPageList {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0 0 20px;
+}
+html body .innerPage .center > div.midSide .midPageList li {
+  width: 110px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide .midPageList li:last-child {
+  margin-right: 0;
+}
+html body .innerPage .center > div.midSide .midBottom {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: relative;
+}
+html body .innerPage .center > div.midSide .midBottom .content {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+html body .innerPage .center > div.midSide .midBottom .content.display {
+  display: block;
+}
+html body .innerPage .center > div.midSide .midBottom .innerPageTitle {
+  border-bottom: none;
+  padding: 0;
+}
+html body .innerPage .center > div.midSide .midBottom .titleM {
+  margin: 0 0 20px 0;
+}
+html body .innerPage .center > div.midSide .midBottom .titleS {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+html body .innerPage .center > div.midSide .midBottom label {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+html body .innerPage .center > div.midSide .midBottom label .itemName {
+  margin-right: 25px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .innerPage .center > div.midSide .midBottom label select,
+html body .innerPage .center > div.midSide .midBottom label input {
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+}
+html body .innerPage .center > div.midSide .midBottom form {
+  width: 100%;
+  height: auto;
+}
+html body .innerPage .center > div.midSide .midBottom form.searchBlock {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 345px 355px 405px;
+  grid-template-columns: 345px 355px 405px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  position: relative;
+}
+html body .innerPage .center > div.midSide .midBottom form.searchBlock::before {
+  content: "";
+  width: 103.7%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .innerPage .center > div.midSide .midBottom form.searchBlock label {
+  width: 345px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+html body .innerPage .center > div.midSide .midBottom form.searchBlock label:nth-of-type(1) {
+  grid-column-start: span 4;
+}
+html body .innerPage .center > div.midSide .midBottom form.searchBlock .selectBtn_Wrap {
+  width: auto;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 30px;
+}
+html body .innerPage .center > div.midSide .midBottom form.searchBlock .selectBtn_Wrap button {
+  width: 70px;
+  height: 100%;
+  margin-right: 5px;
+}
+html body .innerPage .center > div.midSide .midBottom form.searchBlock .searchBtn {
+  width: 35%;
+  height: 40px;
+  justify-self: flex-end;
+}
+html body .innerPage .center > div.midSide .midBottom form label {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+html body .innerPage .center > div.midSide .midBottom form label .itemName {
+  margin-right: 25px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .innerPage .center > div.midSide .midBottom form label select,
+html body .innerPage .center > div.midSide .midBottom form label input {
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+}
+html body .innerPage .center > div.midSide .midBottom form label select.inputStyle_2,
+html body .innerPage .center > div.midSide .midBottom form label input.inputStyle_2 {
+  padding: 0;
+}
+html body .innerPage .center > div.midSide .midBottom form label .remind {
+  position: absolute;
+  bottom: -16px;
+  left: 105px;
+}
+html body .innerPage .center > div.midSide .midBottom form label i {
+  width: 13px;
+  height: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 45%;
+  right: 18px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html body .innerPage .center > div.midSide .midBottom form button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .innerPage .center > div.midSide .midBottom form button.submitBtn {
+  margin: 55px 0 0 105px;
+}
+html body .innerPage .center > div.midSide .midBottom .remindBox {
+  width: 95%;
+  height: auto;
+  padding: 15px 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .innerPage .center > div.midSide .midBottom .remindBox p {
+  font-size: 13px;
+  line-height: 25px;
+}
+html body .innerPage .center > div.midSide .midBottom .remindBox p.remindTitle {
+  line-height: unset;
+  margin-bottom: 10px;
+}
+html body .innerPage .center > div.midSide .midBottom table {
+  width: 100%;
+  height: auto;
+}
+html body .innerPage .center > div.midSide .midBottom table tr th {
+  width: auto;
+  height: 25px;
+}
+html body .innerPage .center > div.midSide .midBottom table tr td {
+  width: auto;
+  height: 50px;
+  vertical-align: middle;
+}
+html body .innerPage .center > div.midSide.memberCenter .midTop .memberData_state {
+  display: unset;
+}
+html body .innerPage .center > div.midSide.memberCenter .midTop .memberData_state .info {
+  padding: 0 0 0 20px;
+}
+html body .innerPage .center > div.midSide.memberCenter .midTop .memberData_state ul {
+  padding: 0 20px;
+  margin: 10px 0 0 0;
+}
+html body .innerPage .center > div.midSide.memberCenter .midTop .memberData_state ul li {
+  padding: 0;
+  margin-right: 30px;
+}
+html body .innerPage .center > div.midSide.memberCenter .midTop .memberData_state ul li:last-child {
+  margin-right: 0;
+}
+html body .innerPage .center > div.midSide.memberCenter .midTop .memberData_state ul li i {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 15px;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom .titleM:not(:first-child) {
+  margin: 20px 0;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom form::before {
+  content: "";
+  width: 104.8%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom form .half {
+  width: 46%;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom form .half .submitBtn {
+  width: 288px;
+  margin: 40px 0 0 105px;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom form .half > .remind {
+  margin: 20px 0;
+  position: unset;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom form .half > .remind span {
+  margin: 0 5px;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom label.changePassWord input {
+  width: 196px;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom label.changePassWord button {
+  width: 70px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom label button {
+  width: auto;
+  padding: 5px;
+  margin-left: 20px;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom label .btnInput {
+  width: 286px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3px 3px 3px 15px;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom label .btnInput input {
+  width: 100%;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom label .btnInput button {
+  width: 70px;
+  height: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom table tr th {
+  width: 16.6666666667%;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom table tr td {
+  height: 40px;
+}
+html body .innerPage .center > div.midSide.invite .midBottom {
+  padding: 0 20px 20px 20px;
+}
+html body .innerPage .center > div.midSide.invite .midBottom .innerPageTitle {
+  height: 60px;
+  padding: 0;
+}
+html body .innerPage .center > div.midSide.invite .midBottom .inviteWrap {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 290px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 290px;
+}
+html body .innerPage .center > div.midSide.invite .midBottom .inviteWrap label {
+  width: 100%;
+}
+html body .innerPage .center > div.midSide.invite .midBottom .inviteWrap label.qrCode {
+  grid-row-start: span 2;
+}
+html body .innerPage .center > div.midSide.invite .midBottom .inviteWrap label.qrCode img {
+  width: 90px;
+  height: 90px;
+  margin-left: 100px;
+}
+html body .innerPage .center > div.midSide.invite .midBottom .inviteWrap label .itemName {
+  width: 55px;
+  margin-right: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .innerPage .center > div.midSide.invite .midBottom .inviteWrap label .inputStyle_2 {
+  padding: 0;
+}
+html body .innerPage .center > div.midSide.invite .midBottom .inviteWrap label button {
+  width: auto;
+  white-space: nowrap;
+  padding: 8px 5px;
+  margin-left: 10px;
+}
+html body .innerPage .center > div.midSide.invite .midBottom .inviteImg {
+  width: 100%;
+  height: 652px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+html body .innerPage .center > div.midSide.invite .midBottom .infoBlock {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .innerPageTitle {
+  height: auto;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  border: none;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .bar {
+  width: 100%;
+  height: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  margin: 0 0 30px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .bar span {
+  width: 8%;
+  height: 100%;
+  display: inline-block;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content ul {
+  width: 100%;
+  height: auto;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content ul.level {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0 10px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content ul.toNext {
+  width: 50%;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content ul.toNext li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content ul.toNext li:last-child {
+  margin-bottom: 0;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content ul.toNext li.deposit_Num .bar span {
+  width: 20%;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content ul.toNext li.levelWater_Num .bar span {
+  width: 30%;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content ul.toNext li .bar {
+  width: 100%;
+  height: 8px;
+  margin: 0 10px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content ul li {
+  width: auto;
+  height: auto;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .levelWelfare {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 0;
+  margin: 30px 0 0;
+  position: relative;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .levelWelfare::before {
+  content: "";
+  width: 103.7%;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .levelWelfare ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0 50px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .levelWelfare ul li {
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .levelWelfare ul li .validNum {
+  margin-top: 10px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .levelWelfare button.more {
+  width: 30%;
+  height: 40px;
+  margin: 0 auto;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .titleM i {
+  margin-right: 5px;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList i {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  opacity: 0.5;
+  pointer-events: none;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList i.active {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  opacity: 1;
+  pointer-events: visible;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList i.fa-chevron-left {
+  margin-right: 20px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList i.fa-chevron-right {
+  margin-left: 20px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList ul {
+  width: 100%;
+  max-width: 1075px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList ul ol {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList ul ol li {
+  width: 280px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 10px;
+  padding: 15px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList ul ol li .medal {
+  width: 60px;
+  height: 70px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList ul ol li .vipDetail {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 10px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList ul ol li .vipDetail p span {
+  display: block;
+  margin-top: 10px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content table {
+  margin-bottom: 50px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content table.promotion tr th,
+html body .innerPage .center > div.midSide.vip .midBottom .content table.promotion tr td {
+  width: 25%;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content table.return tr th,
+html body .innerPage .center > div.midSide.vip .midBottom .content table.return tr td, html body .innerPage .center > div.midSide.vip .midBottom .content table.discount tr th,
+html body .innerPage .center > div.midSide.vip .midBottom .content table.discount tr td {
+  width: 16.6666666667%;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipNotice {
+  width: 100%;
+  height: auto;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipNotice .title {
+  margin-bottom: 20px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipNotice .em {
+  margin-bottom: 20px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipNotice ul {
+  width: 100%;
+  height: auto;
+  padding: 0 0 0 40px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipNotice ul li {
+  width: 100%;
+  height: auto;
+  list-style: cjk-ideographic;
+  margin-bottom: 10px;
+}
+html body .innerPage .center > div.midSide.wallet .midTop .walletWrap {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .innerPage .center > div.midSide.wallet .midTop .walletWrap .typeBox {
+  width: 50%;
+  height: auto;
+  padding: 20px;
+}
+html body .innerPage .center > div.midSide.wallet .midTop .walletWrap .typeBox .typeName {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .innerPage .center > div.midSide.wallet .midTop .walletWrap .typeBox .typeName span {
+  padding: 4px 8px;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.wallet .midTop .walletWrap .typeBox .numTotal {
+  margin-top: 15px;
+}
+html body .innerPage .center > div.midSide.wallet .midTop .walletWrap .typeBox .withdrawLimit {
+  margin-top: 40px;
+}
+html body .innerPage .center > div.midSide.wallet .midTop .walletWrap .typeBox .withdrawLimit span {
+  margin-left: 30px;
+}
+html body .innerPage .center > div.midSide.wallet .midBottom .platformWallet .platformOuter {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+html body .innerPage .center > div.midSide.wallet .midBottom .platformWallet .platformOuter .platformBox {
+  width: 100%;
+  height: 100px;
+  padding: 15px 10px;
+}
+html body .innerPage .center > div.midSide.wallet .midBottom .platformWallet .platformOuter .platformBox .num {
+  margin-top: 15px;
+}
+html body .innerPage .center > div.midSide.dealRecord .midBottom .content .searchBlock .searchBtn {
+  justify-self: flex-end;
+}
+html body .innerPage .center > div.midSide.dealRecord .midBottom .content table {
+  width: 100%;
+}
+html body .innerPage .center > div.midSide.dealRecord .midBottom .content table.water tr th {
+  width: auto;
+}
+html body .innerPage .center > div.midSide.dealRecord .midBottom .content table.water tr th:nth-of-type(1), html body .innerPage .center > div.midSide.dealRecord .midBottom .content table.water tr th:nth-of-type(6) {
+  width: 20%;
+}
+html body .innerPage .center > div.midSide.dealRecord .midBottom .content table.water tr td {
+  width: auto;
+}
+html body .innerPage .center > div.midSide.dealRecord .midBottom .content table.water tr td:nth-of-type(1), html body .innerPage .center > div.midSide.dealRecord .midBottom .content table.water tr td:nth-of-type(6) {
+  width: 20%;
+}
+html body .innerPage .center > div.midSide.dealRecord .midBottom .content table.water tr td p {
+  border: none;
+}
+html body .innerPage .center > div.midSide.dealRecord .midBottom .content table tr th {
+  width: 25%;
+}
+html body .innerPage .center > div.midSide.pointRecord .midBottom {
+  padding: 0 20px 20px;
+}
+html body .innerPage .center > div.midSide.pointRecord .midBottom .content form.searchBlock {
+  -ms-grid-columns: 30% 30% 40%;
+  grid-template-columns: 30% 30% 40%;
+  padding: 0;
+  margin-top: 10px;
+}
+html body .innerPage .center > div.midSide.pointRecord .midBottom .content form.searchBlock label {
+  width: 100%;
+  -ms-grid-column: unset;
+      grid-column-start: unset;
+}
+html body .innerPage .center > div.midSide.pointRecord .midBottom .content form.searchBlock label .itemName {
+  width: auto;
+}
+html body .innerPage .center > div.midSide.pointRecord .midBottom .content table tr th,
+html body .innerPage .center > div.midSide.pointRecord .midBottom .content table tr td {
+  width: 25%;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom {
+  padding: 0;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .innerPageTitle {
+  padding: 10px 20px 0;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content form.searchBlock {
+  -ms-grid-columns: minmax(332px, 1fr) 20px minmax(332px, 1fr) 20px minmax(332px, 1fr);
+  grid-template-columns: repeat(3, minmax(332px, 1fr));
+  gap: 20px;
+  padding: 20px 20px 30px;
+  margin-bottom: 20px;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content form.searchBlock::before {
+  width: 100%;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content form.searchBlock label {
+  width: 100%;
+  -ms-grid-column: unset;
+      grid-column-start: unset;
+  margin: 0;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content form.searchBlock label:nth-of-type(3) {
+  grid-column-start: 1 span;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content form.searchBlock label .itemName {
+  width: auto;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content form.searchBlock .selectBtn_Wrap {
+  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content form.searchBlock .selectBtn_Wrap button {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content form.searchBlock .selectBtn_Wrap .hint {
+  margin-left: 10px;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .titleWrap,
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .detailWrap {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .titleWrap p,
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .detailWrap p {
+  text-align: center;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .titleWrap p:nth-of-type(1), html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .titleWrap p:nth-of-type(2), html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .titleWrap p:nth-of-type(3),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .detailWrap p:nth-of-type(1),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .detailWrap p:nth-of-type(2),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .detailWrap p:nth-of-type(3) {
+  width: 25%;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .titleWrap p:nth-of-type(4), html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .titleWrap p:nth-of-type(5),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .detailWrap p:nth-of-type(4),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .detailWrap p:nth-of-type(5) {
+  width: 10%;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .titleWrap p:nth-of-type(6),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .detailWrap p:nth-of-type(6) {
+  width: 5%;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .titleWrap i,
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .detailWrap i {
+  margin: 0 auto;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li.active table {
+  display: table;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li .detailWrap {
+  width: 97%;
+  margin: 0 auto;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table {
+  width: 97%;
+  height: auto;
+  display: none;
+  margin: 8px auto 20px;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr th:nth-of-type(1),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr td:nth-of-type(1) {
+  width: 15%;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr th:nth-of-type(2),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr td:nth-of-type(2) {
+  width: 10%;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr th:nth-of-type(3),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr td:nth-of-type(3) {
+  width: 30%;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr th:nth-of-type(4), html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr th:nth-of-type(5),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr td:nth-of-type(4),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr td:nth-of-type(5) {
+  width: 10%;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock.unlock .eventTitle {
+  -ms-grid-columns: auto 14% 47.5% auto 14%;
+  grid-template-columns: auto 14% 47.5% auto 14%;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock:not(:last-child) {
+  margin-bottom: 20px;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10px;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle .block {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle .block p.type, html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle .block p.name {
+  margin-right: 15px;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle .block .pointCount {
+  width: 100%;
+  height: auto;
+  white-space: nowrap;
+  margin-right: 10px;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle .block .pointCount span {
+  margin: 0 5px;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle .block .pointCount span:first-child {
+  margin: 0 5px 0 15px;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle .block .btnBlock {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle .block .btnBlock button {
+  width: 75px;
+  height: 30px;
+  margin-right: 10px;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle .block .btnBlock button:last-child {
+  margin-right: 0;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .infoContent {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 0 1fr 0 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 0;
+  padding: 20px 10px;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .infoContent .itemBlock {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .infoContent .itemBlock:nth-of-type(7), html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .infoContent .itemBlock:nth-of-type(8) {
+  grid-column-start: span 2;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .infoContent .itemBlock .name {
+  margin-right: 30px;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .searchBlock {
+  padding: 0;
+  margin-bottom: 20px;
+}
+html body .innerPage .center > div.midSide.mailWrap .mailType button {
+  width: 125px;
+  height: 35px;
+  margin-right: 10px;
+}
+html body .innerPage .center > div.midSide.mailWrap .mailType button:last-child {
+  margin-right: 0;
+}
+html body .innerPage .center > div.midSide.mailWrap .midPageList.midPageList ul {
+  width: auto;
+  height: auto;
+  display: none;
+}
+html body .innerPage .center > div.midSide.mailWrap .midPageList.midPageList ul.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom {
+  padding: 0;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.display {
+  display: block;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .functionWrap div.block {
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .functionWrap div.block label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .functionWrap div.block label input {
+  padding: 0;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .functionWrap div.block .btnWrap .read,
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .functionWrap div.block .btnWrap .delete {
+  display: block;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .functionWrap div.block .btnWrap .readAll,
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .functionWrap div.block .btnWrap .editBtn {
+  display: none;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .functionWrap label input.select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .functionWrap .finished {
+  display: block;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .allMail li .select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .allMail li .text {
+  max-width: 629px;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap {
+  width: 100%;
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block label {
+  width: unset;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block label.select {
+  width: 8%;
+  height: auto;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block label.select .all {
+  width: 18px;
+  height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block label.select .all::before {
+  content: "";
+  width: 89%;
+  height: 88%;
+  display: block;
+  opacity: 0;
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block label.select .all:checked::before {
+  opacity: 1;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block .btnWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block .btnWrap button {
+  width: auto;
+  height: 30px;
+  padding: 0 15px 2px;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block .btnWrap button.read, html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block .btnWrap button.delete {
+  display: none;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap button.finished {
+  height: 30px;
+  padding: 0 15px;
+  display: none;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail {
+  width: 100%;
+  height: auto;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail li {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail li div {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail li div.text {
+  width: 100%;
+  max-width: 774px;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail li div.text p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-right: 10px;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail li div.date {
+  width: 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail li div.date::before {
+  content: "";
+  width: 1px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail li label {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: unset;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail li label.select {
+  width: 20%;
+  height: auto;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail li label.select .all {
+  width: 18px;
+  height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail li label.select .all::before {
+  content: "";
+  width: 89%;
+  height: 88%;
+  opacity: 0;
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail li label.select .all:checked::before {
+  opacity: 1;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode {
+  width: 100%;
+  height: auto;
+  display: none;
+  padding: 30px;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode.display {
+  display: block;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode .titleM i {
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode .prevNext_Wrap {
+  width: 100%;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 20px 0;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode .prevNext_Wrap i {
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode .prevNext_Wrap i:first-child {
+  margin-right: 100px;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode .dateWrap {
+  width: 100%;
+  height: auto;
+  padding-bottom: 15px;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode .innerMode_Content {
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode .innerMode_Content p {
+  margin-bottom: 10px;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode .innerMode_Content p:last-child {
+  margin-bottom: 0;
+}
+html body .innerPage .center > div.midSide.deposit .midTop .objectList .payType li.payWay {
+  height: 35px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.deposit .midTop .objectList .payType li.payWay:last-child {
+  margin: 0;
+}
+html body .innerPage .center > div.midSide.deposit .midTop .objectList .payType li .pay_Icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom form {
+  width: 45%;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom form label .itemName {
+  min-width: 81px;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom form .submitBtn {
+  width: 305px;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished.display {
+  display: block;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished .deposit_State {
+  margin: 25px 0 20px 0;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished form {
+  width: 60%;
+  margin-bottom: 170px;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished form label .itemName {
+  width: 40px;
+  min-width: unset;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished form label input {
+  width: 185px;
+  margin-right: 5px;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished form label .remind {
+  left: 65px;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished form label button {
+  width: 95px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 10px;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished form label button:last-child {
+  margin-right: 0;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished form .submitBtn {
+  width: 285px;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList {
+  padding: 20px 20px;
+  position: relative;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardWrap {
+  width: 96%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardWrap .cardNum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardWrap .cardNum .text {
+  margin-right: 5px;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardWrap .cardNum span {
+  margin: 0 5px;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList i {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  opacity: 0.5;
+  pointer-events: none;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList i.active {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  opacity: 1;
+  pointer-events: visible;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList i.fa-chevron-left {
+  margin-right: 20px;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList i.fa-chevron-right {
+  margin-left: 20px;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList ul {
+  width: 100%;
+  max-width: 794px;
+  overflow: hidden;
+  padding: 0;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList ul .cardSet {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0 7px 5px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList ul .cardSet li {
+  width: 250px;
+  height: 150px;
+  padding: 15px;
+  margin-right: 15px;
+}
+html body .innerPage .center > div.midSide.bankCard .midBottom form {
+  width: 45%;
+}
+html body .innerPage .center > div.midSide.bankCard .midBottom form .submitBtn {
+  width: 288px;
+}
+html body .innerPage .center > div.midSide.transfer .midTop {
+  margin-bottom: 0;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .accountWrap .typeBox {
+  width: auto;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .accountWrap .typeBox .typeName span {
+  padding: 3px 8px 4px;
+  margin-left: 215px;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer {
+  padding: 20px;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer .titleS span {
+  margin-left: 10px;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form {
+  width: 80%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form .half {
+  width: auto;
+  height: auto;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form .half label {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form .half label .itemName {
+  margin-right: 20px;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form .half label select,
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form .half label input {
+  width: 256px;
+  height: 40px;
+  padding: 0 15px;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form .half .transferBtn_Box {
+  width: 255px;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 5px 1fr 5px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  margin: 0 0 30px 101px;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form .half .transferBtn_Box button {
+  width: 100%;
+  height: 30px;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form .half .submitBtn {
+  width: 255px;
+  height: 40px;
+  margin: 0 0 0 101px;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form i.fa-right-long {
+  width: 27px;
+  height: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .innerPage .center > div.midSide.withdraw .midBottom .content .limited {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+html body .innerPage .center > div.midSide.withdraw .midBottom .content .limited li {
+  width: 24%;
+  height: auto;
+  min-height: 115px;
+  padding: 15px 10px;
+}
+html body .innerPage .center > div.midSide.withdraw .midBottom .content .limited li p {
+  margin-bottom: 10px;
+}
+html body .innerPage .center > div.midSide.withdraw .midBottom .content form {
+  width: 41%;
+}
+html body .innerPage .center > div.midSide.withdraw .midBottom .content form .remind {
+  line-height: 16px;
+  bottom: -35px;
+}
+html body .innerPage .center > div.midSide.withdraw .midBottom .remindBox {
+  width: 100%;
+  margin-top: 30px;
+  position: relative;
+  bottom: unset;
+  left: unset;
+  -webkit-transform: unset;
+          transform: unset;
+}
+html body .gamePage_Wrap {
+  width: 100%;
+  height: auto;
+}
+html body .gamePage_Wrap .center {
+  width: 1400px;
+  height: auto;
+  margin: 0 auto;
+}
+html body .gamePage_Wrap .center .containerWrap {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 70px 0 20px;
+}
+html body .gamePage_Wrap .center .containerWrap .mainImg {
+  width: 675px;
+  height: 732px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: #000000;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox {
+  height: auto;
+  padding-top: 148px;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .title p {
+  white-space: nowrap;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .title p.small {
+  margin-left: 16px;
+  padding-bottom: 5px;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .mainCnt {
+  width: 630px;
+  margin: 50px 0;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .btnBox {
+  width: 630px;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 15px 1fr 15px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li {
+  width: auto;
+  height: auto;
+  cursor: pointer;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li img {
+  width: 189px;
+  height: 185px;
+  margin: 0 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li img:hover, html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li img:active, html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li img.active {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li p {
+  padding-top: 10px;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap {
+  width: 100%;
+  height: auto;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .nav {
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 50px;
+  position: relative;
+  cursor: pointer;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li::before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: transparent;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 9px 10px 9px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .nav .search {
+  width: 330px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px 0 10px;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .nav .search i {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 5px;
+  cursor: pointer;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .nav .search input {
+  width: 100%;
+  height: 100%;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li {
+  width: 100%;
+  height: auto;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 15px 1fr 15px 1fr 15px 1fr 15px 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li {
+  width: 248px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li:hover .btnBox, html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li:active .btnBox, html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li.active .btnBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li img {
+  width: 100%;
+  height: 165px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background: #000000;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox {
+  width: 100%;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 15px;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox p {
+  max-width: 175px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox i {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox {
+  width: 100%;
+  height: 165px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button {
+  width: 140px;
+  height: 40px;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button:first-child {
+  margin-bottom: 15px;
+}
+html body .gamePage_Wrap .center .marqueeWrap {
+  width: 100%;
+  height: 50px;
+}
+html body .eventWrap {
+  width: 100%;
+  height: auto;
+}
+html body .eventWrap .eventTitle {
+  width: 100%;
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .eventWrap .eventBody {
+  width: 1400px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px auto 0;
+  padding: 0 0 50px;
+}
+html body .eventWrap .eventBody .sideNav {
+  width: 360px;
+  height: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 15px;
+}
+html body .eventWrap .eventBody .sideNav ul {
+  width: 100%;
+  height: 100%;
+}
+html body .eventWrap .eventBody .sideNav ul li {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 25px;
+  position: relative;
+  cursor: pointer;
+}
+html body .eventWrap .eventBody .sideNav ul li:before {
+  content: "";
+  width: 4px;
+  height: 100%;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html body .eventWrap .eventBody .sideNav ul li i {
+  margin-right: 30px;
+}
+html body .eventWrap .eventBody .eventList {
+  width: 1025px;
+  height: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .eventWrap .eventBody .eventList .eventBox {
+  width: 100%;
+  height: 310px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+html body .eventWrap .eventBody .eventList .eventBox:last-child {
+  margin-bottom: 0;
+}
+html body .eventWrap .eventBody .eventList .eventBox img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html body .eventWrap .eventBody .eventList .eventBox ul {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 25px;
+}
+html body .eventWrap .eventBody .eventList .eventBox ul li {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .eventWrap .eventBody .eventList .eventBox ul li.title {
+  max-width: 72%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html body .eventWrap .eventBody .eventList .eventBox ul li.btnBox {
+  width: 28%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .eventWrap .eventBody .eventList .eventBox ul li.btnBox button:last-child {
+  margin-left: 10px;
+}
+html body .helpWrap {
+  width: 100%;
+  height: auto;
+}
+html body .helpWrap .helpBody {
+  width: 1400px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding: 30px 0 50px;
+}
+html body .helpWrap .helpBody .sideNav {
+  width: 360px;
+  height: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 30px;
+}
+html body .helpWrap .helpBody .sideNav ul {
+  width: 100%;
+  height: auto;
+}
+html body .helpWrap .helpBody .sideNav ul li {
+  width: 100%;
+  height: auto;
+  position: relative;
+  cursor: pointer;
+}
+html body .helpWrap .helpBody .sideNav ul li.active .topic i:last-child {
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+}
+html body .helpWrap .helpBody .sideNav ul li.active ul.display {
+  display: block;
+}
+html body .helpWrap .helpBody .sideNav ul li .topic {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 0 20px;
+  cursor: pointer;
+}
+html body .helpWrap .helpBody .sideNav ul li .topic i:first-child {
+  margin-right: 20px;
+}
+html body .helpWrap .helpBody .sideNav ul li .topic i:last-child {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+html body .helpWrap .helpBody .sideNav ul li i {
+  margin-right: 30px;
+}
+html body .helpWrap .helpBody .sideNav ul li ul {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+html body .helpWrap .helpBody .sideNav ul li ul li {
+  width: 100%;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 55px;
+  cursor: pointer;
+}
+html body .helpWrap .helpBody .container {
+  width: 1010px;
+  height: auto;
+  padding: 40px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .helpWrap .helpBody .container > div {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+html body .helpWrap .helpBody .container > div.display {
+  display: block;
+}
+html body .helpWrap .helpBody .container > div h2 {
+  margin: 55px 0 35px;
+}
+html body .helpWrap .helpBody .container > div h2:nth-of-type(1) {
+  margin-top: 0;
+}
+html body .helpWrap .helpBody .container > div p {
+  margin-bottom: 23px;
+}
+html body .helpWrap .helpBody .container > div p.remind.mar {
+  margin-top: 75px;
+}
+html body .helpWrap .helpBody .container > div p.haveBtn {
+  margin-bottom: 23px;
+}
+html body .helpWrap .helpBody .container > div p.haveBtn button {
+  margin-left: 20px;
+}
+html body .helpWrap .helpBody .container > div .img {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+html body .helpWrap .helpBody .container > div button {
+  width: 215px;
+  height: 40px;
 }
 html body footer {
   width: 100%;
@@ -1567,7 +4756,385 @@ html body aside.service:hover i, html body aside.service:active i, html body asi
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
-html body .main_bg {
+html body .filter {
+  display: none;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+html body .filter.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .filter .jumpWindow {
+  display: none;
+  min-width: 480px;
+  height: auto;
+  overflow: hidden;
+}
+html body .filter .jumpWindow.display {
+  display: block;
+}
+html body .filter .jumpWindow.fgPW .content {
+  height: 80px;
+}
+html body .filter .jumpWindow.fgPW .content input {
+  text-align: center;
+}
+html body .filter .jumpWindow.plsLogin .content {
+  height: 80px;
+}
+html body .filter .jumpWindow.news .content ul {
+  width: 840px;
+  height: 300px;
+  overflow-y: overlay;
+  padding: 15px;
+}
+html body .filter .jumpWindow.news .content ul ol {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+html body .filter .jumpWindow.news .content ul ol.display {
+  display: block;
+}
+html body .filter .jumpWindow.news .content ul li {
+  width: 100%;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .filter .jumpWindow.news .content ul li.typeList {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+html body .filter .jumpWindow.news .content ul li.typeList button {
+  width: auto;
+  height: 100%;
+  position: relative;
+  padding: 0 40px;
+}
+html body .filter .jumpWindow.news .content ul li.typeList button:hover::after, html body .filter .jumpWindow.news .content ul li.typeList button:active::after, html body .filter .jumpWindow.news .content ul li.typeList button.active::after {
+  display: block;
+}
+html body .filter .jumpWindow.news .content ul li.typeList button::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+}
+html body .filter .jumpWindow.news .content ul li.typeList button::after {
+  display: none;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+}
+html body .filter .jumpWindow.news .content ul li .text {
+  max-width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html body .filter .jumpWindow.quickTransfer {
+  width: 480px;
+  height: auto;
+}
+html body .filter .jumpWindow.quickTransfer .content {
+  padding: 40px 40px 15px 40px;
+}
+html body .filter .jumpWindow.quickTransfer .content form {
+  width: 100%;
+  height: auto;
+}
+html body .filter .jumpWindow.quickTransfer .content form label {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 30px 70%;
+  grid-template-columns: 25% 70%;
+  gap: 10px 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+html body .filter .jumpWindow.quickTransfer .content form label input {
+  padding: 0 15px;
+}
+html body .filter .jumpWindow.quickTransfer .content form label i {
+  width: 100%;
+  text-align: center;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+html body .filter .jumpWindow.quickTransfer .content form label .transferBtn_Box {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 8px 1fr 8px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  padding: 5px 0;
+}
+html body .filter .jumpWindow.quickTransfer .content form label .transferBtn_Box button {
+  width: 100%;
+  height: 30px;
+}
+html body .filter .jumpWindow.quickTransfer .content form label .checkBtn {
+  width: 100%;
+  height: 40px;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+html body .filter .jumpWindow.quickTransfer .btnBox {
+  padding: 20px 0;
+}
+html body .filter .jumpWindow.reminder .content, html body .filter .jumpWindow.applied .content {
+  padding: 24px 80px 35px;
+}
+html body .filter .jumpWindow.reminder .content p, html body .filter .jumpWindow.applied .content p {
+  text-align: center;
+}
+html body .filter .jumpWindow.changePhone .content {
+  padding: 20px 0;
+}
+html body .filter .jumpWindow.changePhone .content .text {
+  width: 280px;
+  margin-bottom: 20px;
+}
+html body .filter .jumpWindow.changePhone .content label {
+  width: 280px;
+  height: auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+html body .filter .jumpWindow.changePhone .content label:last-child {
+  margin-bottom: 0;
+}
+html body .filter .jumpWindow.changePhone .content label input {
+  padding: 0 15px;
+}
+html body .filter .jumpWindow.changePhone .content label button {
+  padding: 5px;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html body .filter .jumpWindow.changePW .content {
+  padding: 20px 0;
+}
+html body .filter .jumpWindow.changePW .content label {
+  width: 280px;
+  height: auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+html body .filter .jumpWindow.changePW .content label:last-child {
+  margin-bottom: 0;
+}
+html body .filter .jumpWindow.changePW .content label input {
+  padding: 0 15px;
+}
+html body .filter .jumpWindow.dealDetail {
+  width: 840px;
+}
+html body .filter .jumpWindow.dealDetail .content {
+  padding: 20px;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+}
+html body .filter .jumpWindow.dealDetail .content .serialNum span {
+  margin-left: 10px;
+}
+html body .filter .jumpWindow.dealDetail .content table tr th,
+html body .filter .jumpWindow.dealDetail .content table tr td {
+  width: auto;
+}
+html body .filter .jumpWindow.pointDetail {
+  width: 480px;
+}
+html body .filter .jumpWindow.pointDetail .content {
+  max-height: 281px;
+  padding: 20px;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+}
+html body .filter .jumpWindow.pointDetail .content .scrollOuter {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+}
+html body .filter .jumpWindow.pointDetail .content .scrollOuter table {
+  width: 100%;
+  padding-top: 40px;
+  margin: 0;
+  position: relative;
+}
+html body .filter .jumpWindow.pointDetail .content .scrollOuter table tr:first-child {
+  position: absolute;
+  top: 0;
+}
+html body .filter .jumpWindow.pointDetail .content .scrollOuter table tr th,
+html body .filter .jumpWindow.pointDetail .content .scrollOuter table tr td {
+  width: 50%;
+}
+html body .filter .jumpWindow.eventWindow {
+  width: 1000px;
+  height: auto;
+}
+html body .filter .jumpWindow.eventWindow .content {
+  width: 100%;
+  padding: 20px;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+}
+html body .filter .jumpWindow.eventWindow .content img {
+  width: 100%;
+  height: 240px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html body .filter .jumpWindow.eventWindow .content .eventRule {
+  width: 100%;
+  height: 260px;
+  margin: 20px 0 0;
+}
+html body .filter .jumpWindow.eventWindow .content .eventRule .overflowBlock {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
+}
+html body .filter .jumpWindow.eventWindow .content .eventRule .overflowBlock p {
+  margin-bottom: 10px;
+  line-height: 22px;
+}
+html body .filter .jumpWindow.eventWindow .content .eventRule .overflowBlock p:last-child {
+  margin-bottom: 0;
+}
+html body .filter .jumpWindow .title {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+html body .filter .jumpWindow .title i {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+}
+html body .filter .jumpWindow .content {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .filter .jumpWindow .content input {
+  width: 280px;
+  height: 42px;
+}
+html body .filter .jumpWindow .content table {
+  margin-top: 20px;
+}
+html body .filter .jumpWindow .btnBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 30px;
+}
+html body .filter .jumpWindow .btnBox button {
+  display: block;
+  width: 280px;
+  height: 42px;
+  margin: 0 auto;
+}
+html body .filter .jumpWindow .btnBox .remind {
+  margin-top: 20px;
+}
+html body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+html body::-webkit-scrollbar-thumb {
+  background: #cccccc;
+  border-radius: 10px;
+}
+html body::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 10px;
+}
+html body .bg {
   width: 100%;
   height: 785px;
   position: absolute;
@@ -1581,6 +5148,20 @@ html body .input.primary {
   background: #fff6e8;
   -webkit-box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.5882352941) inset;
           box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.5882352941) inset;
+}
+html body .input.chkbox {
+  background: #fff;
+  border: solid 1px #000;
+  border-radius: 3px;
+}
+html body .input.chkbox::before {
+  border-color: #da0101;
+  border-style: solid;
+  border-width: 3px 3px 0 0;
+  opacity: 0;
+}
+html body .input.chkbox:checked::before {
+  opacity: 1;
 }
 html body .btn {
   width: auto;
@@ -1609,7 +5190,7 @@ html body .btn.third {
   background: linear-gradient(to bottom, #241709 0%, #a87f45 15%, #bb9256 85%, #241709 100%);
   color: #000;
 }
-html body .btn.third:hover.forget, html body .btn.third:active.forget, html body .btn.third.active.forget {
+html body .btn.third:hover, html body .btn.third:active, html body .btn.third.active {
   color: #ffe8c5;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #8b714c), color-stop(80%, #3c2d1b));
   background: linear-gradient(to top, #8b714c 5%, #3c2d1b 80%);

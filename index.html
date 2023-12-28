@@ -3,15 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.25">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="shortcut icon" href="../img/NTLOGO_64x64.ico" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <title>document</title>
+    <link rel="stylesheet" href="../css_gold/colorStyle.css">
+    <script src="https://kit.fontawesome.com/8858aac5ee.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="unlogin">
     <header>
         <div class="top">
             <div class="center">
@@ -23,11 +27,13 @@
                         <input type="password" placeholder="密碼" class="input primary">
                     </label>
                     <label for="">
-                        <input type="checkbox">
+                        <input type="checkbox" class="input chkbox">
                         <p>記住帳號</p>
                     </label>
-                    <button type="button" class="btn primary signin">登入</button>
-                    <button type="button" class="btn second signup">註冊</button>
+                    <button type="button" class="btn primary signin"
+                        onclick=" window.location.href='./html/index.html'">登入</button>
+                    <button type="button" class="btn second signup"
+                        onclick=" window.location.href='./html/register.html'">註冊</button>
                     <button type="button" class="btn third forget">忘記密碼</button>
                     <div class="lang">
                         <p>繁體中文</p>
@@ -51,47 +57,47 @@
         </div>
         <div class="mid">
             <div class="center">
-                <div class="logo">
+                <div class="logo" onclick="window.location.href='./index.html'">
                     <img src="./img/logo_img.png" alt="">
                 </div>
                 <ul class="menu">
                     <li>
-                        <a href="#">首頁</a>
+                        <a href="./index.html">首頁</a>
                     </li>
                     <li>
-                        <a href="#">熱門</a>
+                        <a href="javascript: void(0)">熱門</a>
                     </li>
                     <li>
-                        <a href="#">體育賽事</a>
+                        <a href="javascript: void(0)">體育賽事</a>
                     </li>
                     <li>
-                        <a href="#">真人娛樂</a>
+                        <a href="javascript: void(0)">真人娛樂</a>
                     </li>
                     <li>
-                        <a href="#">彩票</a>
+                        <a href="javascript: void(0)">彩票</a>
                     </li>
                     <li>
-                        <a href="#">老虎機</a>
+                        <a href="javascript: void(0)">老虎機</a>
                     </li>
                     <li>
-                        <a href="#">捕魚機</a>
+                        <a href="javascript: void(0)">捕魚機</a>
                     </li>
                     <li>
-                        <a href="#">棋牌遊戲</a>
+                        <a href="javascript: void(0)">棋牌遊戲</a>
                     </li>
                     <li>
-                        <a href="#">優惠中心</a>
+                        <a href="javascript: void(0)">優惠中心</a>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="bottom">
             <div class="list">
-                <i class="arrow_ic prev "></i>
+                <i class="arrow_ic prev"></i>
                 <ul class="sport">
                     <ol>
                         <li>
-                            <a href="#">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/36588.png" alt="">
                                 </div>
@@ -103,7 +109,7 @@
                 <ul class="live ">
                     <ol>
                         <li>
-                            <a href="#">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/live_1.png" alt="">
                                 </div>
@@ -111,7 +117,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/live_2.png" alt="">
                                 </div>
@@ -119,7 +125,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/live_3.png" alt="">
                                 </div>
@@ -127,7 +133,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/live_4.png" alt="">
                                 </div>
@@ -135,7 +141,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/live_5.png" alt="">
                                 </div>
@@ -147,7 +153,7 @@
                 <ul class="lottery">
                     <ol>
                         <li>
-                            <a href="">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/sg.png" alt="">
                                 </div>
@@ -155,7 +161,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/gs.png" alt="">
                                 </div>
@@ -163,7 +169,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/rwd.png" alt="">
                                 </div>
@@ -175,7 +181,7 @@
                 <ul class="slot">
                     <ol>
                         <li>
-                            <a href="">
+                            <a href="javascript: void(0)#">
                                 <div>
                                     <img src="./img/bng.png" alt="">
                                 </div>
@@ -183,7 +189,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/bwin.png" alt="">
                                 </div>
@@ -191,7 +197,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/fa.png" alt="">
                                 </div>
@@ -199,7 +205,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/gr.png" alt="">
                                 </div>
@@ -207,7 +213,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/ifun.png" alt="">
                                 </div>
@@ -215,7 +221,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/pls.png" alt="">
                                 </div>
@@ -223,7 +229,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/png.png" alt="">
                                 </div>
@@ -231,7 +237,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/rsg.png" alt="">
                                 </div>
@@ -239,7 +245,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/sp.png" alt="">
                                 </div>
@@ -247,7 +253,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/tpg.png" alt="">
                                 </div>
@@ -255,7 +261,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/ufo.png" alt="">
                                 </div>
@@ -267,7 +273,7 @@
                 <ul class="fish">
                     <ol>
                         <li>
-                            <a href="">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/bwin.png" alt="">
                                 </div>
@@ -275,7 +281,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/fa.png" alt="">
                                 </div>
@@ -283,7 +289,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/gr.png" alt="">
                                 </div>
@@ -291,7 +297,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/rsg.png" alt="">
                                 </div>
@@ -299,7 +305,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/sp.png" alt="">
                                 </div>
@@ -307,7 +313,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/tpg.png" alt="">
                                 </div>
@@ -319,7 +325,7 @@
                 <ul class="card">
                     <ol>
                         <li>
-                            <a href="">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/bts.png" alt="">
                                 </div>
@@ -327,7 +333,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/fa.png" alt="">
                                 </div>
@@ -335,7 +341,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/gr.png" alt="">
                                 </div>
@@ -343,7 +349,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/ifun.png" alt="">
                                 </div>
@@ -351,7 +357,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/png.png" alt="">
                                 </div>
@@ -359,7 +365,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="javascript: void(0)">
                                 <div>
                                     <img src="./img/rwd.png" alt="">
                                 </div>
@@ -372,7 +378,7 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="home">
         <section class="swiper-banner">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -389,15 +395,15 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </section>
-        <div class="marqueeArea">
-            <div class="marqueeTitle">
+        <div class="marquee">
+            <div class="title">
                 <p>最新資訊</p>
             </div>
-            <div class="marqueeTextBox">
+            <div class="textBox">
                 <p>測試跑馬燈測試跑馬燈測試跑馬燈測試跑馬燈測試跑馬燈測試跑馬燈</p>
             </div>
         </div>
-        <div class="gridArea">
+        <div class="typeList">
             <ul>
                 <li>
                     <div class="gameSelect sport">
@@ -466,22 +472,27 @@
             <div class="upperHalfCenter">
                 <ul>
                     <li>
-                        <a href="#1" name="#1">
+                        <a href="javascript: void(0)">
                             <p>最新公告</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#2" name="#2">
+                        <a href="javascript: void(0)">
                             <p>優惠</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#3" name="#3">
+                        <a href="javascript: void(0)">
+                            <p>VIP會員</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript: void(0)">
                             <p>幫助中心</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#4" name="#4">
+                        <a href="javascript: void(0)">
                             <p>關於我們</p>
                         </a>
                     </li>
@@ -514,8 +525,40 @@
             <i></i>
         </div>
     </aside>
-    <div class="main_bg"></div>
+    <div class="bg"></div>
+    <div class="filter ">
+        <!-- 忘記密碼 -->
+        <div class="jumpWindow fgPW">
+            <div class="title">
+                <p>忘記密碼</p>
+                <!-- <i class="close_ic"></i> -->
+                <i class="fa-solid fa-xmark closeWindow"></i>
+            </div>
+            <div class="content">
+                <input class="inputStyle_1" type="text" placeholder="請輸入您的手機號碼">
+            </div>
+            <div class="btnBox">
+                <button class="closeWindow btnStyle_1">重置密碼</button>
+                <p class="remind">我們將發送新的密碼到您的手機，請查收簡訊</p>
+            </div>
+        </div>
+        <!-- 請先登入 -->
+        <div class="jumpWindow plsLogin ">
+            <div class="title">
+                <p>提示</p>
+                <!-- <i class="close_ic"></i> -->
+                <i class="fa-solid fa-xmark closeWindow"></i>
+            </div>
+            <div class="content">
+                <p>請先登入</p>
+            </div>
+            <div class="btnBox">
+                <button class="closeWindow btnStyle_1">確認</button>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="./js/script.js"></script>
+<script src="./js/javascript.js"></script>
 
 </html>

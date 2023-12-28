@@ -1,3 +1,4 @@
+'use strict';
 // swiper
 $(function () {
     var swiper = new Swiper('.swiper-banner', {
@@ -28,7 +29,6 @@ $(function () {
         $(this).siblings().removeClass("active");
     })
 })();
-
 // hover
 $(function () {
     var click;
@@ -83,6 +83,7 @@ $(function () {
         $(this).toggleClass("display");
     })
 });
+
 // footer
 $(function () {
     $("footer .upperHalf .upperHalfCenter ul li").click(function () {
@@ -91,8 +92,9 @@ $(function () {
     })
 });
 
-const langFn = function () {
 
+
+(function () {
     const langFace = document.querySelector("header .top .center .userList .lang");
     let click = 0;
 
@@ -110,4 +112,55 @@ const langFn = function () {
             p.innerHTML = el.innerHTML;
         });
     }
-};langFn();
+})();
+
+
+
+// (()=>{
+//     const moneyFace = document.querySelector("header .top .center .userList .total");
+//     let click = 0;
+
+//     moneyFace.addEventListener("click", function () {
+//         console.log("ddd");
+//         click++;
+//         click % 2 == 1 ? moneyFace.classList.add("display") : moneyFace.classList.remove("display");
+//     });
+// })();
+
+
+
+
+(() => {
+
+    //快速轉帳
+    $("header .bottom .list ul.sport ol li a , header .bottom .list ul.live ol li a , header .bottom .list ul.lottery ol li a").click(function () {
+        var n = $(this).find("p").text();
+
+        $(".jumpWindow")
+            .addClass("display");
+
+        $(".filter, .jumpWindow.quickTransfer")
+            .addClass("display")
+            .siblings()
+            .removeClass("display");
+
+        $(".jumpWindow.quickTransfer .content form label:nth-of-type(1)")
+            .find("p.platformName").text(n);
+    });
+
+    $("main .typeList ul li").click(function(){
+        console.log("ddd");
+        var n = $(this).find("p").text();
+
+        if($(this).closest("body").find("header .top .center div").hasClass("loginBox")) {
+            
+            $(".filter, .jumpWindow.quickTransfer")
+            .addClass("display")
+            .siblings()
+            .removeClass("display");
+    
+            $(".jumpWindow.quickTransfer .content form label:nth-of-type(1)")
+            .find("p.platformName").text(n);
+        }
+    })
+})();

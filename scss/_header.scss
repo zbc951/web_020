@@ -51,18 +51,12 @@ header {
                     }
 
                     input[type=checkbox] {
-                        background: #fff;
-                        border: solid 1px #000;
-                        border-radius: 3px;
                         width: 14px;
                         height: 14px;
                         position: relative;
                         cursor: pointer;
 
                         &::before {
-                            border-color: #da0101;
-                            border-style: solid;
-                            border-width: 3px 3px 0 0;
                             content: "";
                             width: 12px;
                             height: 4px;
@@ -70,13 +64,6 @@ header {
                             top: 0px;
                             left: 0px;
                             transform: rotate(130deg);
-                            opacity: 0;
-                        }
-
-                        &:checked {
-                            &::before {
-                                opacity: 1;
-                            }
                         }
                     }
 
@@ -99,8 +86,13 @@ header {
                         margin-right: 10px;
                     }
 
-                    &.forget {
-                        width: auto;
+                    &.forget,
+                    &.signout,
+                    &.mail,
+                    &.member,
+                    &.withdraw,
+                    &.transfer,
+                    &.deposit {
                         height: 100%;
                         font-size: 14px;
                         font-weight: bold;
@@ -108,11 +100,31 @@ header {
                         padding: 0 20px;
                         margin-right: 5px;
                     }
+
+                    &.notice {
+                        position: relative;
+
+                        &::after {
+                            background: #fae8c1;
+                            color: #000000;
+                            content: "10";
+                            width: 20px;
+                            height: 20px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50px;
+                            position: absolute;
+                            top: 5px;
+                            right: 0px;
+                            font-size: 11px;
+                            font-weight: bold;
+                        }
+                    }
                 }
 
                 .lang {
                     background: linear-gradient(to bottom, #241709 0%, #a87f45 15%, #bb9256 85%, #241709 100%);
-                    color: #000;
                     width: 100px;
                     height: 100%;
                     display: flex;
@@ -171,7 +183,7 @@ header {
                         display: none;
 
                         li {
-                            padding: 3px 15px;
+                            padding: 5px 15px;
 
                             &:hover,
                             &:active,
@@ -183,6 +195,112 @@ header {
                                 }
                             }
                         }
+                    }
+                }
+
+                .total {
+                    background: linear-gradient(to bottom, #241709 0%, #a87f45 15%, #bb9256 85%, #241709 100%);
+                    width: 80px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 15px;
+                    position: relative;
+                    cursor: pointer;
+                    margin-right: 5px;
+
+                    &.display {
+                        >ul {
+                            display: block;
+                        }
+                    }
+
+                    p {
+                        font-size: 14px;
+                        font-weight: bold;
+                        letter-spacing: 1px;
+
+                        &.itme {
+                            color: #000;
+                        }
+
+                        &.value {
+                            color: #ff0000;
+                        }
+                    }
+
+                    &::after {
+                        border-color: #000 transparent;
+                        border-style: solid;
+                        border-width: 6px 4px 0 4px;
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        right: 10px;
+                        transform: translateY(-50%);
+                        pointer-events: none;
+                    }
+
+                    &:hover,
+                    &:active,
+                    &.active {
+                        background: linear-gradient(to top, #8b714c 5%, #3c2d1b 80%);
+
+                        >p {
+                            color: #ffe8c5;
+                        }
+
+                        &::after {
+                            border-color: #ffe8c5 transparent;
+                        }
+                    }
+
+                    >ul {
+                        background: linear-gradient(to bottom, #241709 0%, #a87f45 15%, #bb9256 85%, #241709 100%);
+                        width: 290px;
+                        height: auto;
+                        position: absolute;
+                        top: 45px;
+                        left: 0;
+                        padding: 5px 0;
+                        display: none;
+
+                        li {
+                            width: 100%;
+                            height: auto;
+                            padding: 15px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            &:hover,
+                            &:active,
+                            &.active {
+                                background: linear-gradient(to top, #8b714c 5%, #3c2d1b 80%);
+
+                                >p {
+                                    color: #ffe8c5;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .userName {
+                    color: #777777;
+                    background: linear-gradient(to bottom, #241709 0%, #a87f45 15%, #bb9256 85%, #241709 100%);
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 15px;
+                    position: relative;
+                    font-size: 14px;
+                    font-weight: bold;
+                    margin-right: 5px;
+
+                    span {
+                        color: #008599;
+                        margin-right: 20px;
                     }
                 }
             }
